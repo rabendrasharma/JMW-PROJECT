@@ -69,7 +69,7 @@ body.inner-page {
     border-radius: 0;
 }
 .get_started .card .card-header {
-    background: rgb(250, 139, 38, 0.08);
+    background: rgba(250, 139, 38, 0.08);
     border: 0;
     font-size: 24px;
     line-height: 30px;
@@ -118,7 +118,7 @@ section.zoho_developing {
     margin-bottom: 60px;
 }
 .zoho-update .apd-company-wrap {
-    background: rgb(250, 139, 38, 0.08);
+    background: rgba(250, 139, 38, 0.08);
     text-align: center;
 }
 .apd-company-wrap h3 {
@@ -524,7 +524,7 @@ a:hover {
 }
 .apd-development-lifecycle .apd-lifecycle-wrap .apd-timeline-wrap .content .apd-content-title span {
 	position: relative;
-	color: rgb(250 139 38 / 0.08);
+	color: rgba(250 139 38 / 0.08);
 	display: inline-block;
 	margin-right: 6px;
 }
@@ -1016,7 +1016,7 @@ h2.section_maxWidth {
     bottom: 0;
     left: 50%;
     margin-left: 1.4px;
-    border-left: 1px dashed rgb(32, 35, 51, .45);
+    border-left: 1px dashed rgba(32, 35, 51, .45);
     height: calc(100% - 115px);
 }
 .timeline-box {
@@ -1032,7 +1032,7 @@ h2.section_maxWidth {
     height: 22px;
     right: -12px;
     background-color: transparent;
-    border: 0.5px solid rgb(32, 35, 51, .25);
+    border: 0.5px solid rgba(32, 35, 51, .25);
     top: 0;
     border-radius: 50%;
     z-index: 1;
