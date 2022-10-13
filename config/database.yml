@@ -1,0 +1,18 @@
+default: &default
+  adapter:  postgresql
+  encoding: unicode
+  port:     <%= ENV.fetch("POSTGRESQL_PORT", "5432") %>
+  pool:     <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+
+development:
+  <<: *default
+  username: postgres
+  password: newpassword
+  database: jmw_dev
+
+production:
+  adapter: postgresql
+  database: jmw_prod
+  pool: 5
+  timeout: 5000

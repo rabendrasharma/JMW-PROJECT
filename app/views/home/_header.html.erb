@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Including the bootstrap CDN -->
+  <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+  </script>
+  <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body>
+
+  <!-- Creating a navigation bar using the
+    .navbar class of bootstrap -->
+  <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1421px; top: 0;">
+    <div class="img">
+       <%= image_tag "jmw.png" %>
+    </div>
+    <ul class="navbar-nav ml-auto nav_bar">
+      <li class="nav-item">
+        <%= link_to 'Home', root_path, :class => 'home_link', :style => "color: #f47900;" %>
+        </a>
+      </li>
+      <li class="nav-item">
+          <%= link_to 'What We Do', what_we_do_path, :class =>  'what_we_do', onMouseOver: "changeTag();" , :style => "color: #f47900;"%>
+        </a>
+      </li>
+      <li class="nav-item">
+           <%= link_to 'About us', about_us_path, :class => 'about_us', :style => "color: #f47900;" %>
+        </a>
+      </li>
+      <li class="nav-item">
+          <%= link_to 'Our Services', our_services_path, :class =>  'our_services' , :style => "color: #f47900;"%>
+        </a>
+      </li>
+      <li class="nav-item">
+          <%= link_to 'Career', career_path, :class =>  'career', :style => "color: #f47900;"%>
+        </a>
+      </li>
+      <li class="nav-item">
+          <%= link_to 'Contact us',new_user_path, :class =>  'contact_us', :style => "color: #f47900;" %>
+        </a>
+      </li>
+      <li class="nav-item">
+          <%= link_to 'Blog',root_path, :class =>  'blog' , :style => "color: #f47900;"%>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <style>
+    .nav_bar{
+      position: relative;
+      left: -95px;
+    }
+    .home_link{
+      position: relative;
+      left: -260px;
+      color:#f47900;
+    }
+    .about_us{
+       position: relative;
+       left: -170px;
+       color: #f47900;
+    }
+
+  .what_we_do{
+    position: relative;
+      left: -220px;
+      color: #f47900;
+   }
+    .our_services{
+      position: relative;
+      left: -120px;
+      color: #f47900;
+    }
+
+    .contact_us{
+      position: relative;
+      left: -39px;
+      color: #f47900;
+    }
+
+     .career{
+     position: relative;
+     left: -80px;
+     color: #f47900;
+     }
+
+     .blog{
+       color: #f47900;
+     }
+
+     .img{
+      position: relative;
+    left: 25px;
+}
+  </style>
+</body>
+
+</html>

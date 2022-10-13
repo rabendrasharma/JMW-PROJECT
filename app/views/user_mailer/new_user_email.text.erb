@@ -1,0 +1,13 @@
+<% @user = User.last %>
+You got a new user from <%= @user.name %>!
+===============================================
+
+user Details:
+--------------------------
+
+Name: <%= @user.name %>
+Email: <%= @user.email %>
+Phone: <%= @user.number %>
+
+Message:
+<%= @user.message %>

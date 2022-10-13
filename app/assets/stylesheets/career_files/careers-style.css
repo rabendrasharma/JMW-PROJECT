@@ -1,0 +1,436 @@
+:root{
+    --blue-color: #6060EB;
+    --coal-black: #1A1A1A;
+    --white-color: #ffffff;
+    --off-grey: #75757A;
+    --darkDot-blue: #202333;
+}
+h1 {
+    font-family: Century Gothic;
+    font-weight: 800;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display'!important;
+}
+p {
+   color: var(--coal-black); 
+}
+h2, h4, p {
+    font-family: 'Muli', sans-serif !important;
+}
+
+.color-bgBlue {
+    background-color: var(--blue-color) !important;  
+}
+.color-bgGrey {
+    background-color: #f2f2f2 !important;   
+}
+.color-bgWhite {
+    background-color: var(--white-color) !important;
+}
+.banner-img-thumb {
+    background: #A0A0F3;
+    width: 304px;
+    border-radius: 50%;
+    margin: auto;
+}
+.top-content-wrapper p {
+    width: 70%;
+    margin: 14px auto;
+}
+.careerPage h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 50px;
+    /* font-family: Century Gothic; */
+    font-family: 'Playfair Display', Century Gothic;
+    padding-top: 38px;
+    padding-bottom: 8px;
+}
+.careerPage h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: normal;
+    font-family: 'Muli', sans-serif !important;
+    padding-top: 38px;
+    padding-bottom: 8px;
+}
+.blueHeading{
+    color:var(--darkDot-blue);
+}
+
+.careerPage h1 .dot:before, .careerPage  h2.heading-copy .dot:before{
+    width: 12px;
+    height:12px;
+    background: white;
+}
+.careerPage h1 .dot {
+    line-height: 65px;
+    bottom: 0;
+}
+.careerPage .banner{
+    padding-top: 0;
+}
+.careerPage .banner p{
+    font-family:  'Muli', sans-serif !important; 
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--coal-black);
+}
+
+.careerPage .banner a.btn{
+    font-family: 'Muli', sans-serif !important; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    background: var(--darkDot-blue);
+    border: 2px solid var(--darkDot-blue);
+}
+.careerPage .banner a.btn:hover {
+    background: transparent;
+    border: 2px solid var(--darkDot-blue);
+    color: var(--darkDot-blue);
+}
+.careerPage .mainContent h2 {
+    color: var(--darkDot-blue);
+}
+.life-at-systango h4 {
+    font-size: 16px;
+}
+.life-at-systango .career-carousel h2 {
+    font-family: 'Playfair Display' !important;
+    font-size: 38px;
+    color: var(--darkDot-blue);
+    padding:0;
+}
+.career-carousel{
+    display: block !important;
+}
+.life-at-systango .career-carousel h4 {
+    font-size: 16px;
+    font-weight:700;
+    color: var(--darkDot-blue);
+}
+.life-at-systango .career-carousel .owl-nav {
+    position: relative;
+    top: -140px;
+}
+.life-at-systango .career-carousel .owl-nav .fa {
+    font-size: 28px;
+}
+.life-at-systango .career-carousel .owl-nav .owl-prev {
+    margin-right: 38px;
+}
+.owl-slider-tabs {
+    position: absolute;
+    bottom: 40px;
+    left: 19px;
+    right: 0;
+    z-index: 9;
+}
+.owl-slider-tabs ul {
+    display:flex;
+    
+}
+.owl-slider-tabs ul li {
+    width:25%;
+}
+.owl-slider-tabs ul li a {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--darkDot-blue);
+    font-family: 'Muli', sans-serif !important;
+}
+.owl-slider-tabs ul li a:hover {
+    color: var(--blue-color);
+}
+.owl-slider-tabs ul li a.active {
+    color: var(--blue-color);
+}
+.looking-perks .inner-wrap {
+    background: var(--blue-color);
+}
+.looking-perks .inner-wrap .content-wrap p strong {
+    font-weight: bold;
+    font-size: 16px;
+}
+.looking-perks .inner-wrap .content-wrap, .looking-perks .inner-wrap .content-wrap p {
+    color: #fff
+}
+.looking-perks .inner-wrap img {
+    width:100%;
+}
+.looking-perks .inner-wrap .content-wrap {
+    padding: 50px;
+}
+.looking-perks .inner-wrap .content-wrap h2 {
+    padding-top:0;
+    font-size:38px;
+    font-family: 'Playfair Display' !important;
+}
+.looking-perks .inner-wrap .content-wrap ul li {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    font-family: 'Muli', sans-serif !important;
+    background: url(../img/reward.svg);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0px 5px;
+    color:#DFDFFB;
+}
+.work-with-us .content-wrap h2 {
+    font-size: 38px;
+    color: var(--darkDot-blue);
+    font-family: 'Playfair Display' !important;
+}
+.work-with-us .content-wrap .subhead {
+    color: #707070;
+}
+.work-with-us .content-wrap ul {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.work-with-us .content-wrap ul li {
+    background:#f2f2f2;
+    padding:25px;
+    height: 123px;
+    transition:500ms;
+    position: relative;
+        width: 26%;
+    margin: 0 3% 30px;
+    cursor: pointer;
+}
+.work-with-us .content-wrap ul li .forward-arrow {
+    visibility: hidden;
+    position: absolute;
+    bottom: 46px;
+    right: 20px;
+}
+.work-with-us .content-wrap ul li .location-hover {
+    display: none;
+}
+.work-with-us .content-wrap ul li:hover {
+     background: #212126;
+     box-shadow: 0px 4px 50px rgba(33, 33, 38, 0.6);
+}
+.work-with-us .content-wrap ul li:hover .forward-arrow {
+    visibility: visible;
+}
+.work-with-us .content-wrap ul li:hover .location-img {
+    display: none;
+}
+.work-with-us .content-wrap ul li:hover .location-hover {
+   display: inline-block;
+}
+.work-with-us .content-wrap ul li p {
+    font-size: 16px;
+    color: var(--off-grey);
+    margin:0;
+}
+.work-with-us .content-wrap ul li h4{
+    font-size: 18px;
+    color: var(--darkDot-blue);
+    font-weight: 700;
+    font-family: 'Muli', sans-serif !important;
+}
+.work-with-us .content-wrap ul li:hover h4 {
+    color:var(--white-color);
+}
+.work-with-us .content-wrap ul li:hover p {
+    color:#DCDCDC;
+}
+/* popupcss  */
+.careerPoopupMain .modal-header .modal-title {
+    font-size: 20px;
+    line-height: 26px;
+    color: #212126;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif !important;
+}
+.careerPoopupMain .modal-header span {
+    color: #75757A;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 10px;
+}
+.careerPoopupMain .modal-header p {
+    color: #75757A;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+    font-family: 'Muli', sans-serif !important;
+}
+.listHeading {
+    color: #212126;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-family: 'Muli', sans-serif !important;
+}
+.careerPoopupMain ul     {
+    margin-left: 19px;
+    color: #400082;
+    font-size: 20px;
+}
+.listForJob li{
+    font-size: 14px;
+    line-height: 22px;
+    color: #75757A;
+    list-style: disc !important;
+    margin-bottom: 7px;
+    font-family: 'Muli', sans-serif !important;
+}
+.careerPoopupMain .modal-header ,
+.careerPoopupMain .modal-body ,
+.careerPoopupMain .modal-footer{
+    padding-left: 24px;
+}
+.careerPoopupMain .modal-footer {
+    border: 0;
+    padding-top: 0;
+    justify-content: flex-start;
+    padding-left: 24px;
+}
+.careerPoopupMain button.close {
+    background: none;
+    margin-right: 20px;
+}
+.careerPoopupMain {
+    background: rgb(0 0 0 / 0.5);
+}
+/* .modal-backdrop.fade.in {
+    opacity: 0.5;
+}
+.careerPoopupMain.fade.in {
+    opacity: 1;
+} */
+.modal-backdrop {
+    opacity: 0;
+}
+img.forward-arrow,.careerPoopupMain button{
+    cursor: pointer;
+}
+.overflow_hidden{
+    overflow: hidden;
+}
+
+ul.openings li{
+    cursor: pointer;
+}
+@media (max-width:1099px){
+    .career-carousel{
+        padding-top: 40px;
+    }
+}
+@media (max-width:991px){
+    .careerPage h1 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .life-at-systango .career-carousel h2 {
+        font-size: 25px;
+    }    
+}
+
+
+@media (max-width:767px){
+    .owl-slider-tabs ul li a {
+        font-size: 16px;
+    }
+    .careerPage section.banner {
+        text-align: center;
+    }
+    .top-content-wrapper p {
+        width: 100%;
+    }
+    .life-at-systango .owl-stage-outer .item .row {
+        flex-direction: column-reverse;
+    }    
+    .owl-slider-tabs ul li {
+      display: none;
+    }
+    .life-at-systango .career-carousel .owl-nav {
+        position: absolute;
+        top: auto;
+        bottom: 34px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .work-with-us .content-wrap ul li .forward-arrow{
+        visibility: visible;
+    }
+    .careerPage h1 .dot {
+        line-height: 47px;
+        bottom: 0;
+    }
+        .work-with-us .content-wrap ul li {
+        margin-bottom: 15px;
+    }
+    .work-with-us .content-wrap ul li {
+    width: 100%;
+    margin: 0 0 30px;
+}
+    
+}
+@media (max-width:576px){
+    .owl-slider-tabs ul {
+        flex-wrap: wrap;
+    }
+    
+    
+    .looking-perks .inner-wrap .content-wrap h2 {
+        font-size: 28px;
+    }
+    .looking-perks .inner-wrap .content-wrap {
+        padding: 0;
+    }
+    .work-with-us .content-wrap h2 {
+        font-size: 28px;
+    }
+    .careerPage .banner a.btn {
+        border: unset;
+    }
+    
+}
+.apd-app-leading-company .apd-company-wrap {
+    padding: 50px;
+    background-color: rgba(250, 139, 38, 0.08);
+}
+.apd-company-wrap h3 {
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 55px;
+}
+.img-section {
+    margin-top: 30px;
+}
+ul.recognize_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul.recognize_logo > li {
+    padding: 0 25px;
+    margin-bottom: 35px;
+}
+.recognize_logo img {
+    height: 110px;
+}
+section.apd-app-leading-company {
+    background: #fff;
+}
+/* @media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 12rem auto !important;
+    }
+} */

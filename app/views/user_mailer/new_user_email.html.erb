@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <%  @user = User.last %>
+    <p>You got a new user from <%= @user.name %>!</p>
+    <p>
+    user details<br>
+    --------------------------
+    </p>
+    <p>Name: <%= @user.name %></p>
+    <p>Email: <%= @user.email %></p>
+    <p>Phone: <%= @user.number %></p>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @user.message %></p>
+  </body>
+</html>
