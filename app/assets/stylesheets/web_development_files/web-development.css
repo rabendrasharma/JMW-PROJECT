@@ -1167,11 +1167,7 @@ span.color_green {
         left: 25px;
         height: calc(100% - 155px);
     }   
-    .    {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }   
+
     .timeline-box::before {
         left: 20px;
     }  
