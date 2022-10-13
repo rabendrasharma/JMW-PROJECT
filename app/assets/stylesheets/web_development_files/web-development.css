@@ -524,7 +524,7 @@ a:hover {
 }
 .apd-development-lifecycle .apd-lifecycle-wrap .apd-timeline-wrap .content .apd-content-title span {
 	position: relative;
-	color: rgba(250 139 38 / 0.08);
+	color: rgba(250, 139, 38 , 0.08);
 	display: inline-block;
 	margin-right: 6px;
 }
