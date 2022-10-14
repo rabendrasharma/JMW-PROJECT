@@ -2,6 +2,7 @@
 <html>
   <head>
     <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href=
       "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src=
@@ -18,6 +19,7 @@
     <script src=
       "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
       .bs-example {
       margin: auto;
       width: 25%;
@@ -54,7 +56,7 @@
             >
           <%= link_to 'Company', root_path, class: "dropdown-toggle", :style => "color: #f47900;" %>
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-arrow">
             <li>
               <%= link_to 'About us', about_us_path, :style => "color: #f47900;" %>
             </li>
@@ -74,6 +76,7 @@
             <%= link_to 'What We Do', what_we_do_path, :class =>  'dropdown-toggle', :style => "color: #f47900;" %>
             </a>
             <ul class="dropdown-menu">
+            <div class="arrow-up"></div>
               <li>
                 <%= link_to 'Mobile App Development', services_mobile_app_development_path, style: "color: #f47900;" %>
               </li>
@@ -139,6 +142,38 @@
       position: relative;
       left: 25px;
       }
+
+    .dropdown-menu-arrow {
+      top: 50px;
+      position: relative;
+    }
+    .dropdown-menu-arrow:before,
+    .dropdown-menu-arrow:after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-width: 7px 8px;
+      border-style: solid;
+      border-color: transparent;
+      z-index: 1001;
+    }
+    .dropdown-menu-arrow:after {
+      bottom: 88px;
+      right: 110px;
+      border-bottom-color: #f47900;
+    }
+
+    .arrow-up {
+      position: relative;
+      top: -12px;
+      left: 40px;
+      width: 0;
+      height: 0;
+      color: #f47900;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #f47900;
+    }
     </style>
     <script type="text/javascript">
       $(document).ready(function() {
