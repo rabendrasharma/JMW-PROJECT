@@ -20,30 +20,40 @@
                     <div class="col-sm-12">
                       <h6 class="title-footer-2 mb-0">Our Offerings.</h6>
                     </div>
-                  </div>
-                  <ul class="quickLinks">
-                    <li>
-                      <a href="#">Services<span></span></a>
-                      <ul class="sublinks">
-                        <li><a href="#">Mobile App Development</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Data Engineering</a></li>
-                        <li><a href="#">Zoho Offerings</a></li>
-                        <li><a href="#">DevOps</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a style="height: 24px; display: block;"></a>
-                      <ul class="sublinks">
-                        <li><a href="#">Cloud Computing</a></li>
-                        <li><a href="#">Blockchain Development</a></li>
-                        <li><a href="#">iOS App Development</a></li>
-                        <li><a href="#">Android App Development</a></li>
-                        <li><a href="#">Zoho Analytics</a></li>
-                        <li><a href="#">Staff Augmentation</a></li>
-                        <!-- <li><a href="<//?php echo  $base_url; ?>services/cross-platform-app-development">Cross-Platform App Development</a></li>
-                          <li><a href="<//?php echo  $base_url; ?>services/react-native-app-development">React Native App Development</a></li> -->
+                    <ul class="quickLinks">
+                      <li><a href="#">Services<span></span></a>
+                        <ul class="sublinks">
+                          <li><%= link_to "Mobile App Development", services_mobile_app_development_path%></li>
+                          <li><%= link_to "Web Development", services_web_development_path%></li>
+                          <li><a href="#">Data Engineering</a></li>
+                          <li><a href="#">Zoho Offerings</a></li>
+                          <li><%= link_to "Devops", services_devops_path%></li>
+                          <li><a href="#">Digital Marketing</a></li>
+
+                        </ul>
+                      </li>
+                      <li><a style="height: 24px; display: block;"></a>
+                        <ul class="sublinks">
+                          <li><a href="#">Cloud Computing</a></li>
+                          <li><a href="#">Blockchain Development</a></li>
+                          <li><a href="#">iOS App Development</a></li>
+                          <li><a href="#">Android App Development</a></li>
+                          <li><a href="#">Zoho Analytics</a></li>
+                          <li><a href="#">Staff Augmentation</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Quick Links<span></span></a>
+                        <ul class="sublinks">
+                          <li><%= link_to "Company", root_path%></li>
+                          <li><%= link_to "What We Do", what_we_do_path%></li>
+                          <li><%= link_to "Our Services", our_services_path%></li>
+                          <li><%= link_to "Contact Us", new_user_path%></li>
+                          <li><%= link_to "Devops", services_devops_path%></li>
+                          <li><a href="#">Blog</a></li>
+
+                        </ul>
+                      </li>
+
                       </ul>
                     </li>
                   </ul>
@@ -155,19 +165,14 @@
                         <stop offset="0.34375" stop-color="#CD486B"></stop>
                         <stop offset="0.6875" stop-color="#FBAD50"></stop>
                         <stop offset="1" stop-color="#FCCC63"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!--  <a href="https://www.systango.com/blog/">
-                  <svg width="19" height="20" viewBox="0 0 19 20" fill="#B24F42" xmlns="https://www.w3.org/2000/svg">
-                   <path d="M16.3819 0.979539L17.9711 2.54968C18.4106 2.98398 18.4106 3.68553 17.9711 4.11983L13.1248 8.91936V19.6877H0.727173V2.98398H12.7528L14.7815 0.979539C15.2323 0.545243 15.9424 0.534107 16.3819 0.979539ZM10.0028 10.4227L16.0551 4.4539L14.4547 2.87262L8.41367 8.85254L7.61347 11.2133L10.0028 10.4227Z" fill="#B24F42"></path>
-                  </svg>
-                  </a> -->
-              </li>
-            </ul>
+                        </linearGradient>
+                        </defs>
+                      </svg>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
