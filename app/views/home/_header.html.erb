@@ -1,109 +1,155 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-  <!-- Including the bootstrap CDN -->
-  <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-  </script>
-  <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-  </script>
-  <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-  </script>
-</head>
-
-<body>
-
-  <!-- Creating a navigation bar using the
-    .navbar class of bootstrap -->
-  <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1421px; top: 0;">
-    <div class="img">
-       <%= image_tag "jmw.png" %>
-    </div>
-    <ul class="navbar-nav ml-auto nav_bar">
-      <li class="nav-item">
-        <%= link_to 'Home', root_path, :class => 'home_link', :style => "color: #f47900;" %>
-        </a>
-      </li>
-      <li class="nav-item">
-          <%= link_to 'What We Do', what_we_do_path, :class =>  'what_we_do', onMouseOver: "changeTag();" , :style => "color: #f47900;"%>
-        </a>
-      </li>
-      <li class="nav-item">
-           <%= link_to 'About us', about_us_path, :class => 'about_us', :style => "color: #f47900;" %>
-        </a>
-      </li>
-      <li class="nav-item">
+  <head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src=
+      "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+      href=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .bs-example {
+      margin: auto;
+      width: 25%;
+      }
+      @media screen {
+      .dropdown:hover .dropdown-menu,
+      .btn-group:hover .dropdown-menu {
+      display: block;
+      }
+      .dropdown-menu {
+      margin: auto;
+      }
+      .dropdown-toggle {
+      margin: auto;
+      }
+      .navbar .dropdown-toggle,
+      .nav-tabs .dropdown-toggle {
+      margin: auto;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Creating a navigation bar using the
+      .navbar class of bootstrap -->
+    <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1300px; top: 0;">
+      <div class="img">
+        <%= image_tag "jmw.png" %>
+      </div>
+      <ul class="navbar-nav ml-auto nav_bar">
+        <li class="dropdown nav-item home_link">
+          <a href="#"
+            data-toggle="dropdown"
+            >
+          <%= link_to 'Company', root_path, class: "dropdown-toggle", :style => "color: #f47900;" %>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to 'About us', about_us_path, :style => "color: #f47900;" %>
+            </li>
+            <li>
+              <%= link_to 'Partnership', partnership_path, :style => "color: #f47900;" %>
+            </li>
+            <li>
+              <%= link_to 'Career', career_path, :style => "color: #f47900;"%>
+            </li>
+          </ul>
+        </li>
+        <ul class="navbar-nav ml-auto nav_bar second-drop" style="position: relative;left: 53px;">
+          <li class="dropdown nav-item home_link">
+            <a href="#"
+              data-toggle="dropdown"
+              >
+            <%= link_to 'What We Do', what_we_do_path, :class =>  'dropdown-toggle', :style => "color: #f47900;" %>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to 'Mobile App Development', services_mobile_app_development_path, style: "color: #f47900;" %>
+              </li>
+              <li>
+                <%= link_to 'Web Development', services_web_development_path, style: "color: #f47900;" %>
+              </li>
+              <li>
+                <%= link_to 'Devpos', services_devops_path, style: "color: #f47900;" %>
+              </li>
+              <li>
+                <%= link_to 'QA', services_quality_assurance_consultancy_path, style: "color: #f47900;" %>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <li class="nav-item">
           <%= link_to 'Our Services', our_services_path, :class =>  'our_services' , :style => "color: #f47900;"%>
-        </a>
-      </li>
-      <li class="nav-item">
-          <%= link_to 'Career', career_path, :class =>  'career', :style => "color: #f47900;"%>
-        </a>
-      </li>
-      <li class="nav-item">
+          </a>
+        </li>
+        <li class="nav-item">
           <%= link_to 'Contact us',new_user_path, :class =>  'contact_us', :style => "color: #f47900;" %>
-        </a>
-      </li>
-      <li class="nav-item">
-          <%= link_to 'Blog',root_path, :class =>  'blog' , :style => "color: #f47900;"%>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <style>
-    .nav_bar{
+          </a>
+        </li>
+        <li class="nav-item1">
+          <%= link_to 'Blog',root_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: -15px;"%>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <style>
+      .second-drop{
+      }
+      .nav_bar{
       position: relative;
       left: -95px;
-    }
-    .home_link{
+      }
+      .home_link{
       position: relative;
-      left: -260px;
+      left: -210px;
       color:#f47900;
-    }
-    .about_us{
-       position: relative;
-       left: -170px;
-       color: #f47900;
-    }
-
-  .what_we_do{
-    position: relative;
-      left: -220px;
-      color: #f47900;
-   }
-    .our_services{
+      }
+      .what_we_do{
       position: relative;
-      left: -120px;
+      left: -150px;
       color: #f47900;
-    }
-
-    .contact_us{
+      }
+      .our_services{
       position: relative;
-      left: -39px;
+      left: -100px;
       color: #f47900;
-    }
-
-     .career{
-     position: relative;
-     left: -80px;
-     color: #f47900;
-     }
-
-     .blog{
-       color: #f47900;
-     }
-
-     .img{
+      }
+      .contact_us{
       position: relative;
-    left: 25px;
-}
-  </style>
-</body>
-
+      left: -50px;
+      color: #f47900;
+      }
+      .blog{
+      position: relative;
+      left: 50px;
+      color: #f47900;
+      }
+      .img{
+      position: relative;
+      left: 25px;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $(".dropdown, .btn-group").hover(function() {
+              var dropdownMenu =
+                  $(this).children(".dropdown-menu");
+              if (dropdownMenu.is(":visible")) {
+                  dropdownMenu.parent().toggleClass("open");
+              }
+          });
+      });
+    </script>
+  </body>
 </html>

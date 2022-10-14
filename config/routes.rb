@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'career', :to => 'home#career'
   get 'our_services', :to => 'home#our_services'
   get 'contact_us', :to => 'home#contact_us'
+  get 'partnership', :to => 'home#partnership'
   get 'thank_you', :to => 'home#thank_you'
   get 'test', :to => 'home#test'
   get 'what_we_do', :to => 'home#what_we_do'
