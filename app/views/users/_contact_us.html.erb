@@ -144,6 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <%= form.label :Yournumber,'And my Phone Number is'%>
                                     <%= form.text_field :number,class:"w-210",id:"txt",placeholder: "Phone number", :required => true %>
                                   </div>
+                                  <%= form.hidden_field :select_language, value: params[:select_language] %>
                                 <p>to chat and discuss next steps. </p><br>
                                 <p> i have an attachment and would love for you to take a look at it. </p>
                                 <p>Thnak you</p>
