@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
   get 'casestudy/budget_countertops'
-
   get 'casestudy/Up_shift'
+  get 'casestudy/builder' 
+  get 'casestudy/cialfo'
+  get 'casestudy/first_partition'
+  get 'casestudy/gocurb'
+  get 'casestudy/hoticult'
+  get 'casestudy/inkl'
+  get 'casestudy/knotch'
+  get 'casestudy/mission'
+  get 'casestudy/person_app'
+  get 'casestudy/roostify'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
    root to: 'home#index'
