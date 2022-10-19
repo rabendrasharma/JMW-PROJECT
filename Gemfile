@@ -10,7 +10,6 @@ ruby '2.6.3'
 gem 'rails', '~> 5.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'pg'
 gem 'devise'
 gem "rolify"
 gem 'carrierwave', '~> 2.0'
