@@ -101,9 +101,21 @@
           </a>
         </li>
         <li class="nav-item1">
-          <%= link_to 'Blog',root_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: -15px;"%>
+          <%= link_to 'Blog',blogs_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: -15px;"%>
           </a>
         </li>
+        <%# if current_account.present? %>
+         <%# if current_account.is_admin == "admin" %>
+            <!-- <li class="nav-item1">
+              <%#= link_to 'Blog Create',new_admin_blog_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: 15px;"%>
+              </a>
+            </li>
+            <li class="nav-item1">
+              <%#= link_to 'Out',destroy_account_session_path, method: :delete , :class =>  'blog' , :style => "color: #f47900; position: relative; left: 15px;"%>
+              </a>
+            </li> -->
+         <%#end%>
+         <%# end %>
       </ul>
     </nav>
     <style>
