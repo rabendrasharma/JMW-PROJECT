@@ -9,7 +9,6 @@ class Admin::BlogsController < ApplicationController
    end
 
    def create
-    binding.pry
     @blog = Blog.new(blog_params)
     if @blog.save
       redirect_to admin_blogs_path
