@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :accounts
   get 'casestudy/budget_countertops'
   get 'casestudy/Up_shift'
   get 'casestudy/builder' 
@@ -12,9 +13,12 @@ Rails.application.routes.draw do
   get 'casestudy/person_app'
   get 'casestudy/roostify'
 
+  get 'blogs', :to => 'blogs#index'
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   root to: 'home#index'
+  root to: 'home#index'
   get 'about_us', :to => 'home#about_us'
   get 'career', :to => 'home#career'
   get 'our_services', :to => 'home#our_services'
@@ -32,4 +36,7 @@ Rails.application.routes.draw do
 
   #resources :services
   resources :users
+  namespace :admin do
+   resources :blogs
+  end
 end

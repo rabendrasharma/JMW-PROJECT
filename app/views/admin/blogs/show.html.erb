@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title Name</th>
+      <th>Content </th>
+      <th>Image</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody >
+        <td><i class="fa fa-reorder"></i></td>
+        <td><%= @blog.title %></td>
+        <td><%#= link_to request.protocol+request.host_with_port+"/blogs/"+@blog.slug.to_s, request.protocol+request.host_with_port+"/blogs/"+@blog.slug.to_s, target: :_blank, class: "link" %></td>
+        <td><%= raw(@blog.content.truncate(100))+"..." %></td>
+      </tr>
+  </tbody>
+</table>
+<style>
+  .link{
+    text-decoration: underline;
+    color:  blue;
+  }
+  </style>
