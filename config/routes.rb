@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'casestudy/cialfo'
   get 'casestudy/first_partition'
   get 'casestudy/gocurb'
-  get 'casestudy/hoticult'
+  get 'casestudy/horticult'
   get 'casestudy/inkl'
   get 'casestudy/knotch'
   get 'casestudy/mission'
