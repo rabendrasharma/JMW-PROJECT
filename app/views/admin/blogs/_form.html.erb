@@ -1,8 +1,7 @@
 <%= form_for([:admin, @blog]) do |f| %>
   <div class="form-group">
     <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control', maxlength: 30 %>
-    <small> (Title should not be more than 30 character) </small>
+    <%= f.text_field :title, class: 'form-control' %>
   </div>
     <div class="form-group col-sm-12">
       <%= f.label :content %>

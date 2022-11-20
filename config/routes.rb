@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'casestudy/roostify'
 
   get 'blogs', :to => 'blogs#index'
+  get 'blog/:id', :to => 'blogs#show'
 
 
 
