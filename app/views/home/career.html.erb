@@ -85,7 +85,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card mb-3 w-100 mx-auto" style="max-width: 1000px;">
-              <div class="row g-0">
+              <div class="cara-items row g-0">
                 <div class="col-md-8 w-50">
                   <div class="card-body">
                     <h5 class="card-title">Show &amp; Tell.</h5>
@@ -101,7 +101,7 @@
           </div>
           <div class="carousel-item">
             <div class="card mb-3 w-100 mx-auto" style="max-width: 1000px;">
-              <div class="row g-0">
+              <div class="cara-items row g-0">
                 <div class="col-md-8 w-50">
                   <div class="card-body">
                     <h5 class="card-title">JMW Eve’s.</h5>
@@ -117,7 +117,7 @@
           </div>
           <div class="carousel-item">
             <div class="card mb-3 w-100 mx-auto" style="max-width: 1000px;">
-              <div class="row g-0">
+              <div class="cara-items row g-0">
                 <div class="col-md-8 w-50">
                   <div class="card-body">
                     <h5 class="card-title">Onsite Event.</h5>
@@ -155,7 +155,7 @@
                 <div class="content-wrap reveal">
                   <h2>Looking For Perks?</h2>
                   <p><strong>We have got you covered</strong></p>
-                  <ul>
+                  <ul class="all-perks">
                     <li>Challenging projects with the opportunity to learn latest technologies like <br> ReactNative, amber.js, react.js.</li>
                     <li>Closely knit team of engineers who are passionate about what they do.</li>
                     <li>Continuous professional development and meaningful career growth.</li>
@@ -209,7 +209,7 @@
               <li>
 
                 <div class="vacancy-box vacancy-box1" onclick="div_clickable()">
-                  <h4><%= link_to 'ROR Developer', new_user_path(select_language: "ROR Developer") %></h4>
+                  <h4><%= link_to 'ROR Developer', contact_path(select_language: "ROR Developer") %></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %>
@@ -220,7 +220,7 @@
               </li>
               <li >
                 <div class="vacancy-box vacancy-box2"  onclick="div_clickable()">
-                  <h4><%= link_to 'Node JS Developer', new_user_path(select_language: "Node JS Developer")%></h4>
+                  <h4><%= link_to 'Node JS Developer', contact_path(select_language: "Node JS Developer")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -230,7 +230,7 @@
               </li>
               <li >
                 <div class="vacancy-box vacancy-box3"  onclick="div_clickable()">
-                  <h4> <%= link_to 'React JS Developer', new_user_path(select_language: "React JS Developer")%></h4>
+                  <h4> <%= link_to 'React JS Developer', contact_path(select_language: "React JS Developer")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -241,7 +241,7 @@
               <li>
                 <div class="vacancy-box vacancy-box4"  onclick="div_clickable()">
                   <h4>
-                    <%= link_to 'Python Developer', new_user_path(select_language: "Python Developer")%>
+                    <%= link_to 'Python Developer', contact_path(select_language: "Python Developer")%>
                   </h4>
                   <p>Experience : 5+ Years</p>
                   <p class="location">
@@ -252,7 +252,7 @@
               </li>
               <li>
                 <div class="vacancy-box vacancy-box5"  onclick="div_clickable()">
-                  <h4><%= link_to 'Technical Architect', new_user_path(select_language: "Technical Architect")%></h4>
+                  <h4><%= link_to 'Technical Architect', contact_path(select_language: "Technical Architect")%></h4>
                   <p>Experience : 7+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -269,6 +269,9 @@
 </div>
 <%= render partial: "home/footer" %>
 <style>
+*{
+  background-color: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
   .banner{
   background-color: #ff6a006b !important;
   }
@@ -302,11 +305,41 @@
   padding: 0;
   margin: 0;
   }
+  .vacancy_lists>li:hover{
+    background-color: #fd7e14 !important;
+  }
+  .all-perks>li{
+    list-style: disc;
+    padding: 0 !important;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    background-color: orange !important;
+    color: orange;
+  }
+    .carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: orange !important;
+    color: orange;
+  }
+  .carousel-item{
+    background-color: orange !important;
+  }
+  .cara-items{
+    padding-left: 30px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: orange !important;
+  }
+  #carouselExampleIndicators{
+    margin-bottom: 30px !important;
+  }
+  .show-link{
+    background-color: orange;
+  }
 </style>
 <script>
-  function div_clickable(e){
-    window.location = $(event.target).find('a').attr("href");
-  }
+  // function div_clickable(e){
+  //   window.location = $(event.target).find('a').attr("href");
+  // }
   function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

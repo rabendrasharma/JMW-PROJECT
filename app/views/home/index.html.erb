@@ -38,13 +38,13 @@ img.emoji {
 .elementor-279 .elementor-element.elementor-element-454336a:not(.elementor-motion-effects-element-type-background), .elementor-279 .elementor-element.elementor-element-454336a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
 
     background-color: #0a8ae6;
-    background-image: url('https://source.unsplash.com/random/?city,night');
+    background-image: url('https://res.cloudinary.com/da9hlhnra/image/upload/v1668928859/nubelson-fernandes--Xqckh_XVU4-unsplash_x8iztu.jpg');
     background-position: center;
     background-size: cover;
 }
 .elementor-279 .elementor-element.elementor-element-1d72e01c:not(.elementor-motion-effects-element-type-background), .elementor-279 .elementor-element.elementor-element-1d72e01c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-color: #0a8ae6;
-    background-image: url('https://source.unsplash.com/random/?city?');
+    background-image: url('https://res.cloudinary.com/da9hlhnra/image/upload/v1668929020/chris-ried-ieic5Tq8YMk-unsplash_xbxi4y.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -326,7 +326,7 @@ body {
             <div class="elementor-section-wrap">
                <section class="elementor-section elementor-top-section elementor-element elementor-element-5b9dfebc elementor-section-full_width elementor-section-height-full elementor-section-items-top elementor-section-content-middle elementor-section-height-default" data-id="5b9dfebc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;http:\/\/52.91.135.213\/wp-content\/uploads\/2021\/07\/Pexels-Videos-2699.mp4&quot;,&quot;background_video_start&quot;:0,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
                   <div class="elementor-background-video-container">
-                     <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://eleks.com/wp-content/themes/eleks/video/homepage_video.webm?v=321" style="width: 1833px; height: 1031.06px;"></video>
+                     <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://res.cloudinary.com/da9hlhnra/video/upload/v1668926691/Pexels_Videos_2795171_s7cevi.mp4" style="width: 1833px; height: 1031.06px;"></video>
                   </div>
                   <div class="elementor-background-overlay "></div>
                   <div class="elementor-container elementor-column-gap-no">
@@ -348,7 +348,7 @@ body {
                            <div class="elementor-element elementor-element-3c8a93a3 elementor-align-center elementor-widget elementor-widget-button animated fadeInUp" data-id="3c8a93a3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="button.default">
                               <div class="elementor-widget-container">
                                  <div class="elementor-button-wrapper">
-                                    <%= link_to "Get a Quote", new_user_path, :class => "elementor-button-link elementor-button elementor-size-sm" %>
+                                    <%= link_to "Get a Quote", contact_path, :class => "elementor-button-link elementor-button elementor-size-sm" %>
                                     <!-- <a href="http://justmindwork.com/contact-us/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                        <span class="elementor-button-content-wrapper">
                                        <span class="elementor-button-text">Get a Quote</span> -->
@@ -386,7 +386,7 @@ body {
                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2fddb7cf" data-id="2fddb7cf" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
                            <div class="elementor-element elementor-element-655313cc hover-white-style elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="655313cc" data-element_type="widget" data-widget_type="icon-box.default">
-                              <div class="elementor-widget-container">
+                              <div class="elementor-widget-container technology-box">
                                  <div class="elementor-icon-box-wrapper">
                                     <div class="elementor-icon-box-icon">
                                        <a class="elementor-icon elementor-animation-" href="http://justmindwork.com/web-development/">
@@ -395,7 +395,7 @@ body {
                                     </div>
                                     <div class="elementor-icon-box-content">
                                        <h3 class="elementor-icon-box-title">
-                                          <a href="http://justmindwork.com/web-development/">Web Development</a>
+                                          <%= link_to "Web Development",services_web_development_path %>
                                        </h3>
                                        <p class="elementor-icon-box-description">Creative web solutions blended with the latest technologies form the right base for innovative businesses.</p>
                                     </div>
@@ -407,7 +407,7 @@ body {
                      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1986b481" data-id="1986b481" data-element_type="column">
                         <div class="elementor-widget-wrap elementor-element-populated">
                            <div class="elementor-element elementor-element-64a18883 hover-white-style elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="64a18883" data-element_type="widget" data-widget_type="icon-box.default">
-                              <div class="elementor-widget-container">
+                              <div class="elementor-widget-container technology-box">
                                  <div class="elementor-icon-box-wrapper">
                                     <div class="elementor-icon-box-icon">
                                        <a class="elementor-icon elementor-animation-" href="http://justmindwork.com/mobile-app-solutions/">
@@ -415,7 +415,7 @@ body {
                                     </div>
                                     <div class="elementor-icon-box-content">
                                        <h3 class="elementor-icon-box-title">
-                                          <a href="http://justmindwork.com/mobile-app-solutions/">Mobile App Development</a>
+                                          <%= link_to "Mobile App Development",services_mobile_app_development_path %>
                                        </h3>
                                        <p class="elementor-icon-box-description">Our team of experts is dedicated to building custom mobile app solutions by utilizing the latest technologies to solve unique and challenging business problems.</p>
                                     </div>
@@ -464,7 +464,7 @@ body {
                                           <div class="elementor-widget-container">
                                              <div class="elementor-icon-wrapper">
                                                 <div class="elementor-icon">
-                                                   <i aria-hidden="true" class="fas fa-heart"></i>     
+                                                   <i aria-hidden="true" class="fas fa-heart" style="display: none;"></i>     
                                                 </div>
                                              </div>
                                           </div>
@@ -511,7 +511,7 @@ body {
                                           <div class="elementor-widget-container">
                                              <div class="elementor-icon-wrapper">
                                                 <div class="elementor-icon">
-                                                   <i aria-hidden="true" class="fas fa-award"></i>     
+                                                   <i aria-hidden="true" class="fas fa-award" style="display: none";></i>     
                                                 </div>
                                              </div>
                                           </div>
@@ -558,7 +558,7 @@ body {
                                           <div class="elementor-widget-container">
                                              <div class="elementor-icon-wrapper">
                                                 <div class="elementor-icon">
-                                                   <i aria-hidden="true" class="fas fa-chart-pie"></i>     
+                                                   <i aria-hidden="true" class="fas fa-chart-pie" style="display: none";></i>     
                                                 </div>
                                              </div>
                                           </div>
@@ -605,7 +605,7 @@ body {
                                           <div class="elementor-widget-container">
                                              <div class="elementor-icon-wrapper">
                                                 <div class="elementor-icon">
-                                                   <i aria-hidden="true" class="fas fa-music"></i>     
+                                                   <i aria-hidden="true" class="fas fa-music" style="display: none";></i>     
                                                 </div>
                                              </div>
                                           </div>
@@ -629,31 +629,8 @@ body {
                                  </div>
                               </div>
                            </div>
-                           <div class="elementor-element elementor-element-773cddcb elementor-widget elementor-widget-heading" data-id="773cddcb" data-element_type="widget" data-widget_type="heading.default">
-                              <div class="elementor-widget-container">
-                                 <h2 class="elementor-heading-title elementor-size-default">About Us</h2>
-                              </div>
-                           </div>
-                           <div class="elementor-element elementor-element-a90767f elementor-widget elementor-widget-text-editor" data-id="a90767f" data-element_type="widget" data-widget_type="text-editor.default">
-                              <div class="elementor-widget-container">
-                                 <p>At JMW we want to be your end to end IT service organization, big enough to undertake your largest project, yet small enough to maintain the loyalty and the intimacy of a firm and in turn contribute greatly to your success</p>
-                                 <p><strong>What JMW ALL ABOUT</strong> <br>Our team is made up of people who live and breathe technology and for us, it is all about passion, not job. We work towards our client’s success. This is reflected in the relationship we build with our clients spanning multiple years. Over the years, we have had the opportunity to work for several B2B and B2C SaaS, technology companies within several sectors.</p>
-                              </div>
-                           </div>
-                           <div class="elementor-element elementor-element-5e8a277d elementor-align-left elementor-widget elementor-widget-button" data-id="5e8a277d" data-element_type="widget" data-widget_type="button.default">
-                              <div class="elementor-widget-container">
-                                 <div class="elementor-button-wrapper">
-                                    <%= link_to 'Know More', new_user_path, :class => "elementor-button-link elementor-button elementor-size-sm" %>
-                                    </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
                         </div>
                      </div>
-                    <div>
-                      <%= image_tag "laptop-img1.jpg", style: "width: 50%;position: absolute;border: 5px solid #F47900;border-top-left-radius: 120px;border-bottom-right-radius: 120px;"%>
-                    </div>
                    </div>
                </section>
                <section class="elementor-section elementor-top-section elementor-element elementor-element-454336a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="454336a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
@@ -896,6 +873,9 @@ body {
 </div>
 <!-- #content -->
 <style>
+*{
+   font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif !important;
+}
   .lappy-img{
     width: 50%;
     position: absolute;
@@ -936,7 +916,15 @@ body {
       position: relative;
     top: -8px !important;
 }
-
+.technology-box:hover{
+   background-color: rgb(255, 245, 202) !important;
+}
+.technology-box{
+   font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+.elementor-heading-title{
+   font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif !important;
+}
 </style>
 
 
