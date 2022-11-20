@@ -209,7 +209,7 @@
               <li>
 
                 <div class="vacancy-box vacancy-box1" onclick="div_clickable()">
-                  <h4><%= link_to 'ROR Developer', new_user_path(select_language: "ROR Developer") %></h4>
+                  <h4><%= link_to 'ROR Developer', contact_path(select_language: "ROR Developer") %></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %>
@@ -304,9 +304,9 @@
   }
 </style>
 <script>
-  function div_clickable(e){
-    window.location = $(event.target).find('a').attr("href");
-  }
+  // function div_clickable(e){
+  //   window.location = $(event.target).find('a').attr("href");
+  // }
   function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
