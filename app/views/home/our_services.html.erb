@@ -97,7 +97,7 @@
               <div class="card-body">
                 <ul>
                   <li class="">
-                    <%= link_to "Mobile App Development", services_mobile_app_development_path%>
+                    <%= link_to "Mobile App Development", mobile_app_development_path%>
                   </li>
                   <li class="">
                     <a href="#">
@@ -146,7 +146,7 @@
               <div class="card-body">
                 <ul>
                   <li class="col-md-4">
-                    <%= link_to "Web Development", services_web_development_path%>  
+                    <%= link_to "Web Development", web_development_path%>
                   </li>
                   <li class="col-md-4">
                     <a href="#">
@@ -317,7 +317,7 @@
               <div class="card-body">
                 <ul>
                   <li class="col-md-4">
-                    <%= link_to "Devops", services_devops_path%>
+                    <%= link_to "Devops", devops_path%>
                   </li>
                   <li class="col-md-4">
                     <a href="">
@@ -325,19 +325,19 @@
                     </a>
                   </li>
                   <li class="col-md-4">
-                    <%= link_to "Security Engineering", services_devops_path%>
+                    <%= link_to "Security Engineering", devops_path%>
                   </li>
                   <li class="col-md-4">
-                    <%= link_to "Cloud Consultation and Expertise", services_devops_path%>
+                    <%= link_to "Cloud Consultation and Expertise", devops_path%>
                   </li>
                   <li class="col-md-4">
-                    <%= link_to "CI/CD Pipeline", services_devops_path%>
+                    <%= link_to "CI/CD Pipeline", devops_path%>
                   </li>
                   <li class="col-md-4">
-                    <%= link_to "Process Automation", services_devops_path%>
+                    <%= link_to "Process Automation", devops_path%>
                   </li>
                   <li class="col-md-4">
-                    <%= link_to "Operational Management Release", services_devops_path%>
+                    <%= link_to "Operational Management Release", devops_path%>
                   </li>
                 </ul>
               </div>
@@ -415,345 +415,128 @@
                         position: relative;
                         left: 310px;
                   }
+                  .new:hover{
+                     background-color: #f47900 !important;
+                  }
+
+                 .new:hover{
+                      background-color: #fd7e14 !important;
+                    }
+                    .all-perks>li{
+                      list-style: disc;
+                      padding: 0 !important;
+                    }
+                    .carousel-control-prev, .carousel-control-next{
+                      background-color: orange !important;
+                      color: orange;
+                    }
+                      .carousel-control-prev:hover, .carousel-control-next:hover{
+                      background-color: orange !important;
+                      color: orange;
+                    }
+                    .carousel-item{
+                      background-color: orange !important;
+                    }
+
                 </style>
-                <div class="grid portfolio row aos-init aos-animate grid-container" data-aos="fade-up" data-aos-delay="100" style="position: relative; height: 4740px; margin: 93px;">
-                  <div class="element-item  fintech machine-learning smart-city  android-app mobile-apps react-js react-native-app col-md-4 grid-item" style="position: absolute; left: 0px; top: 393px;">
-                    <a href="casestudy/gocurb" class="white-bg portfolio-item ">
-                      <h3>Gocurb</h3>
-                      <p>Gocurb is reimagining urban mobility. We are creating a comprehensive mobility platform and providing products for mobile app solutions, effortless payment, paratransit, business travel, and advertising that reaches captive audiences of millions.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation specialities-and-services  devops col-md-4 grid-item" style="position: absolute; left: 760px; top: 0px;">
-                    <a href="casestudy/cialfo" class="white-bg portfolio-item ">
-                      <h3>Cialfo</h3>
-                      <p>We support high school students and their counselors throughout the early career exploration and college search and selection process. Read our story!</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  fintech specialities-and-services  blockchain react-js col-md-4 grid-item" style="position: absolute; left: 380px; top: 360px;">
-                    <a href="/casestudy/mission" class="white-bg portfolio-item ">
-                      <h3>MISSON</h3>
-                      <p>Leveraged Smart Contracts to enable direct &amp; secure payments with reduced gas burn.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  entertainment music-entertainment  angular-js blockchain web-apps col-md-4 grid-item" style="position: absolute; left: 760px; top: 372px;">
-                    <a href="/casestudy/roostify " class="white-bg portfolio-item ">
-                      <h3>Roostify</h3>
-                      <p>Veraticket builds an NFT ticketing platform to buy, sell and trade event tickets.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  entertainment music-entertainment social-networking  blockchain col-md-4 grid-item" style="position: absolute; left: 760px; top: 699px;">
-                    <a href="/casestudy/first_partition " class="white-bg portfolio-item ">
-                      <h3>First Partation</h3>
-                      <p>Architecture consultation to roll out blockchain-based reward points for Football Fans.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  health-fitness  android-app react-native-app col-md-4 grid-item" style="position: absolute; left: 380px; top: 732px;">
-                    <a href="/casestudy/builder" class="white-bg portfolio-item ">
-                      <h3>Builder</h3>
-                      <p>Our mission is to make it easy for you to build the software you need. Everyone should be able to do it – doesn’t matter what your background, tech knowledge or budget is.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  e-commerce shopping-app  react-native-app col-md-4 grid-item" style="position: absolute; left: 0px; top: 753px;">
-                    <a href="/casestudy/knotch" class="white-bg portfolio-item ">
-                      <h3>Knotch</h3>
-                      <p>Giving a gift has never been this easy. With just a few taps, send the perfect gift to your close ones.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  iot machine-learning  django iot node python react-js col-md-4 grid-item" style="position: absolute; left: 760px; top: 1026px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Person App</h3>
-                      <p>An IoT building intelligence system that picks up the temperature, humidity, and gas increases in buildings. Detects sudden changes in sound, light, and motion-based on machine learning algorithms and gets smarter with usage.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  fintech  android-app angular-js django node react-js col-md-4 grid-item" style="position: absolute; left: 0px; top: 1080px;">
-                    <a href="/casestudy/horticult" class="white-bg portfolio-item ">
-                      <h3>Hoticult</h3>
-                      <p> We’re driven by the common, underlying passion for gardening in each one of us. Plants give so much to
-                            us — the food we eat, the air we breathe.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  entertainment social-networking  android-app col-md-4" style="position: absolute; left: 380px; top: 1092px;">
-                    <a href="/casestudy/inkl" class="white-bg portfolio-item ">
-                      <h3>Inkl</h3>
-                      <p>We created inkl to solve two bedrock problems in the world today. We say “bedrock" because we see these two problems as the foundation for a much larger array of macroeconomic and social issues. </p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  specialities-and-services travel-hospitality  android-app ios mobile-apps col-md-4" style="position: absolute; left: 0px; top: 1473px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Wake Up</h3>
-                      <p>Thailand’s #1 and largest spa and beauty booking application. Makes booking wellness services in Thailand an absolutely breezy affair.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  igaming-and-fantasy-sports social-networking  android-app ios react-native-app col-md-4" style="position: absolute; left: 380px; top: 1485px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Porsche</h3>
-                      <p>NotYetPro is a sports specific social networking platform that empower amateur athletes. A new athlete paradigm, the app allows athletes to self-promote and chronicle their career.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation fintech  devops node col-md-4 grid-item" style="position: absolute; left: 0px; top: 0px;">
-                    <a href="casestudy/Up_shift" class="white-bg portfolio-item ">
-                      <h3>Up Shift</h3>
-                      <p>CredWorthy is a UK-centric platform that targets unsecured loans between family and friends, especially the ones with substantial APRs.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  specialities-and-services  react-native-app ror col-md-4" style="position: absolute; left: 760px; top: 1485px;">
-                    <a href="#" class="white-bg portfolio-item blue">
-                      <h3>My Online Cleaner (MFS)</h3>
-                      <p>Laundry can get boring.. So we helped MyOnlineCleaner redefine ordering laundry services with a simple app that will get you clean clothes with just a few taps!</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions  zoho-analytics zoho-integrations col-md-4" style="position: absolute; left: 0px; top: 1833px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>ExpertLabels</h3>
-                      <p>Be it Brewery, Cosmetic, Food, or Pharmaceutical products, ExpertLabels can label it for you. We helped ExpertLabel unleash the full potential of the Zoho Products Suite for leads capture, engagement and delivery and built an integrated business solution.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation b2b-solutions  devops col-md-4 grid-item" style="position: absolute; left: 380px; top: 0px;">
-                    <a href="casestudy/budget_countertops" class="white-bg portfolio-item ">
-                      <h3>Budget countertops</h3>
-                      <p>Oak9 aims at keeping their clients cloud infrastructure secure by design so the businesses can focus on their growth. </p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation e-commerce  zoho-analytics zoho-integrations col-md-4" style="position: absolute; left: 380px; top: 1911px;">
-                    <a href="#" class="white-bg portfolio-item feelshare">
-                      <h3>Inovelli</h3>
-                      <p>A consumer electronics company that offers customized solutions and allows its customers to have full control of their smart home devices, no matter where they are.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  music-entertainment social-networking  android-app ios react-native-app col-md-4" style="position: absolute; left: 760px; top: 1923px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>RadioSpirits</h3>
-                      <p>Radio Spirits features a selection of Old Time Radio (OTR) shows and is hosted by Greg Bell. The app also allows users to stream and download programs on-demand from classic radio library.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions  devops php zoho-analytics zoho-integrations col-md-4" style="position: absolute; left: 380px; top: 2304px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Squirrel Hub</h3>
-                      <p>Squirrel Hub, a consultancy that provides CRM focussed advisory, strategy and integrations to other businesses - relies on JMW engineers for their CRM integration Expertise.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation b2b-solutions  zoho-analytics zoho-integrations col-md-4" style="position: absolute; left: 0px; top: 2325px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Diener Law</h3>
-                      <p>4iiz is a software for law firms currently used across the USA. Firms using 4iiz have recorded increase in revenues by 200%, 300% even 400%!</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  music-entertainment social-networking  mobile-apps col-md-4" style="position: absolute; left: 760px; top: 2349px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Feelshare</h3>
-                      <p>Feelshare lets you broadcast rich music experiences for listeners across the world in real-time. Live video feature is also there to show the world where you are.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions enterprise-mobility  web-apps col-md-4" style="position: absolute; left: 0px; top: 2718px;">
-                    <a href="#" class="white-bg portfolio-item green">
-                      <h3>UberConference by Dialpad</h3>
-                      <p>A revolutionary business phone system that has created a new category of cloud communication in itself. Dialpad is used by 25,000+ companies for business communications.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions real-estate  devops ios web-apps col-md-4" style="position: absolute; left: 380px; top: 2730px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Stratalert</h3>
-                      <p>An efficient communication platform for owners, tenants, workers and strata managers in office buildings. They wanted to transform the Strata Management sector and pilot other programs creating “smart cities”.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  music-entertainment social-networking  devops java mobile-apps python col-md-4" style="position: absolute; left: 760px; top: 2742px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Veromuse</h3>
-                      <p>A popular social music app geared to help artists build a stronger connection with their fans.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  fintech real-estate  react-native-app vue-js web-apps col-md-4" style="position: absolute; left: 760px; top: 3069px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Futurebricks</h3>
-                      <p>FutureBricks, a Fintech, FCA regulated, Web and Mobile based, peer to peer lending platform for property developments. Book size of more than £1m in its first year.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions enterprise-mobility travel-hospitality  android-app devops ios python react-js web-apps col-md-4" style="position: absolute; left: 380px; top: 3156px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Waitlist</h3>
-                      <p>The easiest and most effective way to manage waitlist and reservations. We are Waitlist's core technology since 2012, originally a Google Venture backed company.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png",alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  b2b-solutions  devops mobile-apps web-apps col-md-4" style="position: absolute; left: 0px; top: 3189px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Porsche</h3>
-                      <p>We created an iPad App and CMS to help Porsche increase their outreach in Australia &amp; Thailand in Trade Expos.
-                        The app helped Porsche capture 389 leads in 1 day.
-                      </p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  automation b2b-solutions  iot mobile-apps web-apps col-md-4" style="position: absolute; left: 760px; top: 3462px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>SmilePass</h3>
-                      <p>A next-gen cloud-based biometric security solution to ditch concerns of social engineering, fraud, and theft.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  travel-hospitality  iot mobile-apps col-md-4" style="position: absolute; left: 380px; top: 3549px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>DrinkMate</h3>
-                      <p>Dubbed as 'the smallest, most convenient breathalyzer in the world' by TechCrunch which measures your Blood Alcohol Content level and tells you if you are safe to drive.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  social-networking  devops col-md-4" style="position: absolute; left: 0px; top: 3582px;">
-                    <a href="#" class="white-bg portfolio-item orange">
-                      <h3>Grindr</h3>
-                      <p>Since launching in 2009, Grindr has quickly grown into the world's largest social networking app for gay, bi-curious and queer men. Our QA and DevOps team helped them accommodate hundreds of requests/per second helping them reach 3M DAU.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  igaming-and-fantasy-sports  flutter-app ios mobile-apps col-md-4" style="position: absolute; left: 760px; top: 3822px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Strat-o-matic</h3>
-                      <p>Based in Glen Head, New York, Strat-O-Matic is a
-                        well-acclaimed fantasy sports game company
-                        dedicated to develop and publish board games,
-                        digital games and simulations.
-                      </p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  music-entertainment  iot java mobile-apps python web-apps col-md-4" style="position: absolute; left: 380px; top: 3975px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Fret Zealot</h3>
-                      <p>Fret Zealot is a state-of-the-art app-enabled LED
-                        addition to your guitar. It fits just above the frets
-                        and shows you exactly where to put your fingers
-                        to play anything you can imagine!
-                      </p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png",alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  social-networking  digital-marketing col-md-4" style="position: absolute; left: 0px; top: 4074px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Madimack</h3>
-                      <p>Being Energy Efficient is the need of the hour and Madimack does just that! They provide High Energy Efficient Solutions for Homes, Offices and Other Commercial Spaces by installing heat pumps and AI automated controls. Our SM experts helped optimise their ad campaigns and increase ROI by 1000%.</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png",alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                  <div class="element-item  specialities-and-services  digital-marketing col-md-4" style="position: absolute; left: 760px; top: 4248px;">
-                    <a href="#" class="white-bg portfolio-item ">
-                      <h3>Tateossian</h3>
-                      <p>Tateossian London is a leading brand known for its unique, refined and meticulously crafted accessories for men and women. Our digital marketing specialists helped them build and implement a sales funnel that increased ROAS by 40%</p>
-                      <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png",alt: "Link Arrow"%></p>
-                    </a>
-                  </div>
-                </div>
+                <div class="grid portfolio row aos-init aos-animate grid-container" data-aos="fade-up" data-aos-delay="100" style="position: relative; height: 1300px; margin: 93px;">
+                <ul class="vacancy_lists">
+                  <li>
+                    <div class="new fintech machine-learning smart-city  android-app mobile-apps react-js react-native-app col-md-4 grid-item" style="position: absolute; left: 0px; top: -9px;">
+                      <a href="casestudy/gocurb" class="">
+                        <h3>Gocurb</h3>
+                        <p>Gocurb is reimagining urban mobility. We are creating a comprehensive mobility platform and providing products for mobile app solutions, effortless payment, paratransit, business travel, and advertising that reaches captive audiences of millions.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                   </div>
+                 </li>
+                  <li>
+                    <div class="new  automation specialities-and-services  devops col-md-4 grid-item" style="position: absolute; left: 760px; top: 0px;">
+                      <a href="casestudy/cialfo" class=" ">
+                        <h3>Cialfo</h3>
+                        <p>We support high school students and their counselors throughout the early career exploration and college search and selection process. Read our story!</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  fintech specialities-and-services  blockchain react-js col-md-4 grid-item" style="position: absolute; left: 380px; top: 0px;">
+                      <a href="/casestudy/mission" class=" ">
+                        <h3>MISSON</h3>
+                        <p>Leveraged Smart Contracts to enable direct &amp; secure payments with reduced gas burn.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  entertainment music-entertainment  angular-js blockchain web-apps col-md-4 grid-item" style="position: absolute; left: 760px; top: 374px;">
+                      <a href="/casestudy/roostify " class=" ">
+                        <h3>Roostify</h3>
+                        <p>Veraticket builds an NFT ticketing platform to buy, sell and trade event tickets.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  entertainment music-entertainment social-networking  blockchain col-md-4 grid-item" style="position: absolute; left: 760px; top: 699px;">
+                      <a href="/casestudy/first_partition " class=" ">
+                        <h3>First Partation</h3>
+                        <p>Architecture consultation to roll out blockchain-based reward points for Football Fans.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  health-fitness  android-app react-native-app col-md-4 grid-item" style="position: absolute; left: 380px; top: 340px;">
+                      <a href="/casestudy/builder" class=" ">
+                        <h3>Builder</h3>
+                        <p>Our mission is to make it easy for you to build the software you need. Everyone should be able to do it – doesn’t matter what your background, tech knowledge or budget is.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  e-commerce shopping-app  react-native-app col-md-4 grid-item" style="position: absolute; left: 0px; top: 562px;">
+                      <a href="/casestudy/knotch" class=" ">
+                        <h3>Knotch</h3>
+                        <p>Giving a gift has never been this easy. With just a few taps, send the perfect gift to your close ones.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  iot machine-learning  django iot node python react-js col-md-4 grid-item" style="position: absolute; left: 760px; top: 1026px;">
+                      <a href="#" class="">
+                        <h3>Person App</h3>
+                        <p>An IoT building intelligence system that picks up the temperature, humidity, and gas increases in buildings. Detects sudden changes in sound, light, and motion-based on machine learning algorithms and gets smarter with usage.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  fintech  android-app angular-js django node react-js col-md-4 grid-item" style="position: absolute; left: 0px; top: 935px;">
+                      <a href="/casestudy/horticult" class="">
+                        <h3>Hoticult</h3>
+                        <p> We’re driven by the common, underlying passion for gardening in each one of us. Plants give so much to
+                              us — the food we eat, the air we breathe.</p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="new  entertainment social-networking  android-app col-md-4" style="position: absolute; left: 380px; top: 812px;">
+                      <a href="/casestudy/inkl" class="">
+                        <h3>Inkl</h3>
+                        <p>We created inkl to solve two bedrock problems in the world today. We say “bedrock" because we see these two problems as the foundation for a much larger array of macroeconomic and social issues. </p>
+                        <p class="text-right mb-0"><%= image_tag "slide-next-pure-white.png", alt: "Link Arrow"%></p>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
                 <div class="spacer50"></div>
               </div>
             </div>
           </div>
-          <!-- <div class="spacer50"></div> -->
-          <div id="winning-section" class="container content dark-text mb-5" hidden="">
-            <div class="row">
-              <div class="col-md-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <h2>Awards and recognitions</h2>
-              </div>
-              <div class="col-md-4 mt-4 content stack-content text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <img src="./our_services_files/winner-icon.png" alt="Apple" title="Apple">
-                <div class="stackbox white-bg pad-80 pl-4 pr-4">
-                  <h3>UberConference</h3>
-                  <p class="mb-0">Winer of TechCrunch Disrupt</p>
-                </div>
-              </div>
-              <div class="col-md-4 mt-4 content stack-content text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <img src="./our_services_files/winner-icon.png" alt="Android" title="Android">
-                <div class="stackbox white-bg pad-80 pl-4 pr-4">
-                  <h3>Fret Zealot</h3>
-                  <p class="mb-0">Winner of TechCrunch Disrupt</p>
-                </div>
-              </div>
-              <div class="col-md-4 mt-4 content stack-content text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <img src="./our_services_files/winner-icon.png" alt="Hybrid" title="Hybrid">
-                <div class="stackbox white-bg pad-80 pl-4 pr-4">
-                  <h3>Smilepass</h3>
-                  <p class="mb-0">Winner of TechCrunch Disrupt</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Review Slider -->
-          <!-- Developing Section Start -->
-          <section class="zoho_developing aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <div class="container">
-              <div class="zoho_consulting_wrap">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="section_heading text-center">
-                      Developing Solutions For A <span class="color_text">Range Of Business Domains</span>.
-                    </h2>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 zoho_developing_list">
-                    <ul>
-                      <li>
-                        <img src="./our_services_files/mobile.png" alt="">
-                        <p>Enterprise Mobility</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/partner.png" alt="">
-                        <p>Social Networks Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/alexa.png" alt="">
-                        <p>Fintech Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/health.png" alt="">
-                        <p>Health &amp; Fitness Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/cart.png" alt="">
-                        <p>E-Commerce Mobile Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/piano.png" alt="">
-                        <p>Music &amp; Entertainment Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/joystick.png" alt="">
-                        <p>iGaming and Fantasy Sports Apps</p>
-                      </li>
-                      <li>
-                        <img src="./our_services_files/education.png" alt="">
-                        <p>Education Apps</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Developing Section END -->
-          <!-- Review Slider -->
-          </section>
         </div>
         <script>
           // function changeTag(){
@@ -847,11 +630,7 @@
         </section>
       </div>
       <!-- <div class="spacer50"></div> -->
-      <%= render 'footer' %>
     </div>
-    <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled">
-      <div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./our_services_files/ads.html" data-google-container-id="a!1" data-load-complete="true"></iframe></div>
-    </ins>
     <script src="./our_services_files/jquery-ui.min.js"></script>
     <script src="./our_services_files/jquery.ui.touch-punch.min.js"></script>
     <!-- Mainly scripts -->

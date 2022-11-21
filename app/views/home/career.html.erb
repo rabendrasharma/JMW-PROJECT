@@ -209,7 +209,7 @@
               <li>
 
                 <div class="vacancy-box vacancy-box1" onclick="div_clickable()">
-                  <h4><%= link_to 'ROR Developer', contact_path(select_language: "ROR Developer") %></h4>
+                  <h4><%= link_to 'ROR Developer', contact_path(select_language: "ROR") %></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %>
@@ -220,7 +220,7 @@
               </li>
               <li >
                 <div class="vacancy-box vacancy-box2"  onclick="div_clickable()">
-                  <h4><%= link_to 'Node JS Developer', contact_path(select_language: "Node JS Developer")%></h4>
+                  <h4><%= link_to 'Node JS Developer', contact_path(select_language: "Node_JS")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -230,7 +230,7 @@
               </li>
               <li >
                 <div class="vacancy-box vacancy-box3"  onclick="div_clickable()">
-                  <h4> <%= link_to 'React JS Developer', contact_path(select_language: "React JS Developer")%></h4>
+                  <h4> <%= link_to 'React JS Developer', contact_path(select_language: "React_JS")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -241,7 +241,7 @@
               <li>
                 <div class="vacancy-box vacancy-box4"  onclick="div_clickable()">
                   <h4>
-                    <%= link_to 'Python Developer', contact_path(select_language: "Python Developer")%>
+                    <%= link_to 'Python Developer', contact_path(select_language: "Python")%>
                   </h4>
                   <p>Experience : 5+ Years</p>
                   <p class="location">
@@ -252,7 +252,7 @@
               </li>
               <li>
                 <div class="vacancy-box vacancy-box5"  onclick="div_clickable()">
-                  <h4><%= link_to 'Technical Architect', contact_path(select_language: "Technical Architect")%></h4>
+                  <h4><%= link_to 'Technical Architect', contact_path(select_language: "Architect")%></h4>
                   <p>Experience : 7+ Years</p>
                   <p class="location">
                     <%= image_tag 'pin-hover.svg'  %> Indore, India
@@ -294,10 +294,11 @@
   letter-spacing: 0;
   position: relative;
   }
-  .chg-img{
-  width: 100%;
-  height: 375px;
-  }
+.chg-img {
+    width: 90%;
+    height: 199px;
+    object-fit: cover;
+}
   section-d{
   width: 1000px;
   }
