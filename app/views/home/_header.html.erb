@@ -19,7 +19,7 @@
     <script src=
       "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
       .bs-example {
       margin: auto;
       width: 25%;
@@ -43,160 +43,391 @@
     </style>
   </head>
   <body>
-    <!-- Creating a navigation bar using the
-      .navbar class of bootstrap -->
-    <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1300px; top: 0;">
-      <div class="img">
-        <%= image_tag "jmw_1.png",style: "width: 213px"%>
-      </div>
-      <ul class="navbar-nav ml-auto nav_bar" style="font-size: 16px; font-weight: bold;">
-        <li class="dropdown nav-item home_link">
-          <a href="#"
-            data-toggle="dropdown"
-            >
-          <%= link_to 'Company', root_path, class: "dropdown-toggle", :style => "color: #f47900;" %>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-arrow">
-            <li>
-              <%= link_to 'About us', about_us_path, :style => "color: #f47900;" %>
+    <header class="header">
+      <div class="header__left">
+        <a href="https://justmindwork.com/" class="header__logo" aria-label="Logo">
+          <%= image_tag "jmw_1.png",style: "width: 50%"%>
+        </a>
+        <div class="header__menuWrap">
+          <ul id="menu-header-menu" class="header__menu">
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10535" class="full-width about-us menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10535 nav-item">
+              <div class="dropdown">
+              <a title="About Us" href="https://justmindwork.com/" class="nav-link dropbtn">Company</a>
+                 <div class="dropdown-content">
+                  <a href="https://justmindwork.com/about_us" style="border-bottom: 1px solid grey;">About Us </a>
+                  <a href="https://justmindwork.com/partnership" >Partnership</a>
+                </div>
+              </div>
+              <div class="dropdown-menu__wrapper" style="display: none;">
+                <ul class="dropdown-menu">
+              </li>
+                </ul>
+              </div>
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10555" class="full-width services menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10555 nav-item">
+              <div class="dropdown">
+              <a title="Services" href="https://justmindwork.com/what_we_do" class="nav-link dropbtn">What We Do</a>
+                <div class="dropdown-content">
+                  <a href="https://justmindwork.com/mobile_app_development" style="border-bottom: 1px solid grey;">Mobile App Development</a>
+                 
+                  <a href="https://justmindwork.com/web_development" style="border-bottom: 1px solid grey;">Web Development </a>
+            
+                  <a href="https://justmindwork.com/devops" style="border-bottom: 1px solid grey;">Devops</a>
+       
+                  <a href="https://justmindwork.com/quality_assurance_consultancy">Q & A</a>
+                </div>
+
+              
             </li>
-            <li>
-              <%= link_to 'Partnership', partnership_path, :style => "color: #f47900;" %>
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10580" class="full-width industries-expertise menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10580 nav-item">
+              <a title="Industries &amp; Expertise" href="https://justmindwork.com/our_services" class="nav-link">Our Services</a>
+              
             </li>
-            <li>
-              <%= link_to 'Career', career_path, :style => "color: #f47900;"%>
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10601" class="clients-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10601 nav-item">
+              <a title="Clients" href="https://justmindwork.com/contact" class="nav-link">Contact Us </a>
+              
             </li>
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10604" class="blog-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10604 nav-item">
+              <a title="Blog" href="https://justmindwork.com/blogs" class="nav-link">Blog</a>
+              
+            </li>
+            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24921" class="global-link menu-item menu-item-type-custom menu-item-object-custom menu-item-24921 nav-item"><a title="Careers" target="_blank" href="https://justmindwork.com/career" class="nav-link">Careers</a></li>
           </ul>
-        </li>
-        <ul class="navbar-nav ml-auto nav_bar second-drop" style="position: relative;left: 53px;">
-          <li class="dropdown nav-item home_link">
-            <a href="#"
-              data-toggle="dropdown"
-              >
-            <%= link_to 'What We Do', what_we_do_path, :class =>  'dropdown-toggle', :style => "color: #f47900;" %>
-            </a>
-            <ul class="dropdown-menu">
-            <div class="arrow-up"></div>
-              <li>
-                <%= link_to 'Mobile App Development', mobile_app_development_path, style: "color: #f47900;" %>
-              </li>
-              <li>
-                <%= link_to 'Web Development', web_development_path, style: "color: #f47900;" %>
-              </li>
-              <li>
-                <%= link_to 'Devpos', devops_path, style: "color: #f47900;" %>
-              </li>
-              <li>
-                <%= link_to 'QA', quality_assurance_consultancy_path, style: "color: #f47900;" %>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <li class="nav-item">
-          <%= link_to 'Our Services', our_services_path, :class =>  'our_services' , :style => "color: #f47900;"%>
-          </a>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Contact us',contact_path, :class =>  'contact_us', :style => "color: #f47900;" %>
-          </a>
-        </li>
-        <li class="nav-item1">
-          <%= link_to 'Blog',blogs_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: -15px;"%>
-          </a>
-        </li>
-        <%# if current_account.present? %>
-         <%# if current_account.is_admin == "admin" %>
-            <!-- <li class="nav-item1">
-              <%#= link_to 'Blog Create',new_admin_blog_path, :class =>  'blog' , :style => "color: #f47900; position: relative; left: 15px;"%>
-              </a>
-            </li>
-            <li class="nav-item1">
-              <%#= link_to 'Out',destroy_account_session_path, method: :delete , :class =>  'blog' , :style => "color: #f47900; position: relative; left: 15px;"%>
-              </a>
-            </li> -->
-         <%#end%>
-         <%# end %>
-      </ul>
-    </nav>
-    <style>
-      .second-drop{
-      }
-      .nav_bar{
-      position: relative;
-      left: -95px;
-      }
-      .home_link{
-      position: relative;
-      left: -210px;
-      color:#f47900;
-      }
-      .what_we_do{
-      position: relative;
-      left: -150px;
-      color: #f47900;
-      }
-      .our_services{
-      position: relative;
-      left: -100px;
-      color: #f47900;
-      }
-      .contact_us{
-      position: relative;
-      left: -50px;
-      color: #f47900;
-      }
-      .blog{
-      position: relative;
-      left: 50px;
-      color: #f47900;
-      }
-      .img{
-      position: relative;
-      left: 25px;
-      }
-
-    .dropdown-menu-arrow {
-      top: 50px;
-      position: relative;
-    }
-    .dropdown-menu-arrow:before,
-    .dropdown-menu-arrow:after {
-      content: "";
-      position: absolute;
-      display: block;
-      border-width: 7px 8px;
-      border-style: solid;
-      border-color: transparent;
-      z-index: 1001;
-    }
-    .dropdown-menu-arrow:after {
-      bottom: 88px;
-      right: 110px;
-      border-bottom-color: #f47900;
-    }
-
-    .arrow-up {
-      position: relative;
-      top: -12px;
-      left: 40px;
-      width: 0;
-      height: 0;
-      color: #f47900;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid #f47900;
-    }
-    </style>
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $(".dropdown, .btn-group").hover(function() {
-              var dropdownMenu =
-                  $(this).children(".dropdown-menu");
-              if (dropdownMenu.is(":visible")) {
-                  dropdownMenu.parent().toggleClass("open");
-              }
-          });
-      });
-    </script>
-  </body>
+        </div>
+      </div>
+      <div class="header__right">
+        <a class="header__btn btn btn--black btn--small" href="https://justmindwork.com/contact">Contact Us</a> 
+      </div>
+    </header>
 </html>
+<style>
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #0045cf;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: #0045cf;}
+</style>
+<script>
+  
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".header");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>
+<style type="text/css">
+  .author .header, .home .header, .single-expertise .header, .single-industries .header, .single-news .header, .single-post .header, .single-products .header, .single-services .header, .transparent_header .header {
+    min-width: 960px !important;
+  }
+  @media (min-width: 961px)
+  .author .header, .home .header, .single-expertise .header, .single-industries .header, .single-news .header, .single-post .header, .single-products .header, .single-services .header, .transparent_header .header {
+  background-color: transparent;
+  box-shadow: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  }
+ header {
+  background-color: transparent; /* For browsers that do not support gradients */
+  background-image: linear-gradient(transparent, transparent);
+
+}
+.header.scrolled{
+  background-color: white !important;
+  transition: background-color 200ms linear;
+}
+  .header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  transition: background-color .3s;
+  z-index: 5;
+  padding-top: 0 !important;
+  font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  height: 100px;
+  color: white;
+  }
+  *, :after, :before {
+  box-sizing: border-box;
+  }
+  user agent stylesheet
+  header {
+  display: block;
+  }
+  .header:hover{
+    background-color: white;
+  }
+  body {
+  font-size: 1rem;
+  line-height: 1.63;
+  margin: 0;
+  }
+  .title, body {
+  color: #1e1d28;
+  }
+  .form .gform_wrapper .gform_footer input[type=submit], .search__field, body {
+  font-family: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  }
+  html{
+  font-size: 16px;
+  }
+  .header__left, .header__logo{
+  align-items: center;
+  display: flex;
+  }
+  user agent stylesheet
+  div {
+  display: block;
+  }
+  
+  html{
+  font-size: 16px;
+  }
+  .header__logo {
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  position: relative;
+  }
+  body a {
+  display: inline;
+  padding: 0;
+  }
+  user agent stylesheet
+  a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  }
+  html{
+  font-size: 16px;
+  }
+  element.style {
+  }
+  user agent stylesheet
+  html{
+  font-size: 16px;
+  }
+  .header__menu {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -12rem;
+  }
+  user agent stylesheet
+  ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  }
+  html{
+  font-size: 16px;
+  }
+  .header__right {
+  align-items: center;
+  display: flex;
+  }
+  @media (min-width: 961px)
+  .home .header__btn {
+  background-color: #ff4925;
+  color: #fff;
+  }
+  @media (min-width: 961px)
+  .author .header__btn, .home .header__btn, .single-expertise .header__btn, .single-industries .header__btn, .single-news .header__btn, .single-post .header__btn, .single-products .header__btn, .single-services .header__btn, .transparent_header .header__btn {
+  background-color: #fff;
+  color: #1e1d28;
+  }
+  .header__btn {
+  margin-right: 60px;
+  }
+  .btn--small {
+  min-width: 170px;
+  padding: 15px;
+  }
+  .btn--black {
+  background-color: #1e1d28;
+  }
+  .btn--black, .btn--blue, .tag-item {
+  color: #fff;
+  }
+  .btn {
+  border-radius: 50px;
+  border: none;
+  display: inline-block;
+  min-width: 260px;
+  padding: 20px;
+  text-align: center;
+  transition-property: background-color,color;
+  -moz-user-select: none;
+  user-select: none;
+  }
+  .btn, .tag-item {
+  line-height: 1.3;
+  transition-duration: .3s;
+  font-weight: 600;
+  text-decoration: none;
+  }
+  .btn, .form .gform_wrapper .gform_footer input[type=submit] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  outline: 0;
+  }
+  .header__search {
+  margin-right: 30px;
+  position: relative;
+  }
+  .lang {
+  width: 72px;
+  }
+  .lang, .lang__item.selected {
+  position: relative;
+  }
+  .search__form {
+  position: relative;
+  }
+  user agent stylesheet
+  form {
+  display: block;
+  margin-top: 0em;
+  }
+  @media (min-width: 961px)
+  .author .header__lang .lang__item.selected, .home .header__lang .lang__item.selected, .single-expertise .header__lang .lang__item.selected, .single-industries .header__lang .lang__item.selected, .single-news .header__lang .lang__item.selected, .single-post .header__lang .lang__item.selected, .single-products .header__lang .lang__item.selected, .single-services .header__lang .lang__item.selected, .transparent_header .header__lang .lang__item.selected {
+  background-color: transparent;
+  }
+  .lang__item {
+  color: #1e1d28;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  transition-duration: .3s;
+  transition-property: background-color,color;
+  }
+  .lang__items {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  border-radius: 0 0 6px 6px;
+  display: none;
+  left: 0;
+  list-style: none;
+  margin: 13px 0 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  }
+  user agent stylesheet
+  .lang__items:after {
+  background: linear-gradient(to bottom,rgba(0,0,0,.1) 0,rgba(0,0,0,0) 100%);
+  content: '';
+  height: 5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  }
+  user agent stylesheet
+  li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  }
+  user agent stylesheet
+  ul {
+  list-style-type: disc;
+  }
+  .lang__link {
+  color: #1e1d28;
+  display: block;
+  padding: 18px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: .3s;
+  transition-property: background-color,color;
+  }
+  user agent stylesheet
+  li {
+  text-align: -webkit-match-parent;
+  }
+  .hide_show_menu {
+  border-style: solid;
+  border-width: 2px 0;
+  cursor: pointer;
+  display: none;
+  height: 18px;
+  margin-left: 20px;
+  position: relative;
+  transition: all .15s cubic-bezier(.67,-.03,.45,1.89);
+  width: 25px;
+  }
+  .dots--black .slick-dots li.slick-active button:after, .hide_show_menu {
+  border-color: #000;
+  }
+  .hide_show_menu::before, .hide_show_menu:after {
+  background: #000;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 6px;
+  transition: all .35s cubic-bezier(.67,-.03,.45,1.89);
+  width: 25px;
+  }
+  .header__menu .nav-link {
+  color: #373737;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 27px 10px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  }
+  .header__menu>li{
+    padding: 10px 18px
+  }
+</style>
