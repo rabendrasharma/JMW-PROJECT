@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="-1">
 
-  <%= render 'home/header' %>
+  <%# render 'home/header' %>
     <div class="show-link">
             <!--Start of Tawk.to Script-->
             <!--Start of Tawk.to Script-->
@@ -137,17 +137,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                   <div class="col-md-10 ">
                                     <%= form.label :YourEmail, 'You can reach me at '%>
-                                    <%= form.text_field :email,class:"w-210",id:"txt", placeholder: "Your email", :required => true%>
+                                    <%= form.text_field :email,class:"w-210 email_field",id:"txt", placeholder: "Your email", :required => true %>
+                                    <p class="validate_email" style=" display: none;color: red;"> Please provide valid email</p>
                                   </div>
 
                                   <div class="col-md-10 ">
                                     <%= form.label :Yournumber,'And my Phone Number is'%>
-                                    <%= form.text_field :number,class:"w-210",id:"txt",placeholder: "Phone number", :required => true %>
+                                    <%= form.text_field :number,class:"w-210 number_field",id:"txt",placeholder: "Phone number", :required => true %>
+                                    <p class="validate_number" style=" display: none;color: red;"> Please provide valid number</p>
                                   </div>
                                   <%= form.hidden_field :select_language, value: params[:select_language] %>
-                                <p>to chat and discuss next steps. </p><br>
-                                <p> i have an attachment and would love for you to take a look at it. </p>
-                                <p>Thnak you</p>
+                                <!-- <p>to chat and discuss next steps. </p><br> -->
+                                <!-- <p> i have an attachment and would love for you to take a look at it. </p> -->
+                                <!-- <p>Thnak you</p> -->
                                   <div class="input-cover mb-4" style="display:inline-block; top:15px;">
                                     <div class="fileUpload">
                                       <span><span id="upload-text"><img class="attach-img-icon" src="" alt="">
@@ -200,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </style>
 
-<%= render 'home/footer' %>
+<%# render 'home/footer' %>
     <div id="scrollToTop" class="scroll-top"><img loading="lazy" src="./contact_us_files/scroll-top.png" alt="Back to Top" title="Back to Top"></div>
   </div>
 
@@ -309,28 +311,90 @@ $(function() {
           <tbody>
             <tr>
               <th class="row">
-               <%= link_to 'Mobile App Development', services_mobile_app_development_path, style: "color: #f47900;" %>
+               <%= link_to 'Mobile App Development', mobile_app_development_path, style: "color: #f47900;" %>
               </th>
             </tr>
             <tr>
               <th class="row">
-               <%= link_to 'Web Development', services_web_development_path, style: "color: #f47900;" %>
+               <%= link_to 'Web Development', web_development_path, style: "color: #f47900;" %>
               </th>
             </tr>
             <tr>
               <th class="row">
-                <%= link_to 'Devpos', services_devops_path, style: "color: #f47900;" %>
+                <%= link_to 'Devpos', devops_path, style: "color: #f47900;" %>
               </th>
             </tr>
             <tr>
               <th class="row">
-                <%= link_to 'QA', services_quality_assurance_consultancy_path, style: "color: #f47900;" %>
+                <%= link_to 'QA', quality_assurance_consultancy_path, style: "color: #f47900;" %>
               </th>
             </tr>
           </tbody>
         </table>`
     $(".myFooter").hide();
   }
+
+  $( ".email_field" ).focusout(function() {
+    var email = $( ".email_field" ).val();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(regex.test(email)){
+      $( ".email_field" ).css('borderColor', '#DCE0E6');
+      $('.validate_email').css('display', 'none');
+    }else{
+      $( ".email_field" ).css('borderColor', 'red');
+      $('.validate_email').css('display', 'block');
+    }
+  })
+
+  $( ".email_field" ).on('keyup', function(){
+    var email = $( ".email_field" ).val();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(regex.test(email)){
+      $( ".email_field" ).css('borderColor', '#DCE0E6');
+      $('.validate_email').css('display', 'none');
+    }else{
+      $( ".email_field" ).css('borderColor', 'red');
+      $('.validate_email').css('display', 'block');
+    }
+  });
+  $( ".email_field" ).on('keydown', function(){
+    var email = $( ".email_field" ).val();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(regex.test(email)){
+      $( ".email_field" ).css('borderColor', '#DCE0E6');
+      $('.validate_email').css('display', 'none');
+    }else{
+      $( ".email_field" ).css('borderColor', 'red');
+      $('.validate_email').css('display', 'block');
+    }
+  });
+
+  $( ".number_field" ).focusout(function() {
+     if( ! ($('.number_field').val().trim().length == 10)){
+      $('.validate_number').css('display', 'block');
+    }else{
+      $('.validate_number').css('display', 'none');
+    }
+  })
+
+  $( ".number_field" ).on('keyup', function(){
+    if( ! ($('.number_field').val().trim().length == 10)){
+      $('.validate_number').css('display', 'block');
+    }else{
+      $('.validate_number').css('display', 'none');
+    }
+  });
+
+  $( ".number_field" ).on('keydown', function(){
+    if( ! ($('.number_field').val().trim().length == 10)){
+      $('.validate_number').css('display', 'block');
+    }else{
+      $('.validate_number').css('display', 'none');
+    }
+  });
+
+
+
 </script>
 
 

@@ -30,10 +30,10 @@ Rails.application.routes.draw do
   get 'what_we_do', :to => 'home#what_we_do'
   get 'about_project', :to => 'home#about_project'
   get 'Up_shift', :to => 'home#Up_shift'
-  get 'services/mobile_app_development', :to => 'services#mobile_app_development'
-  get 'services/quality_assurance_consultancy', :to => 'services#quality_assurance_consultancy'
-  get 'services/web_development', :to => 'services#web_development'
-  get 'services/devops', :to => 'services#devops'
+  get 'mobile_app_development', :to => 'services#mobile_app_development'
+  get 'quality_assurance_consultancy', :to => 'services#quality_assurance_consultancy'
+  get 'web_development', :to => 'services#web_development'
+  get 'devops', :to => 'services#devops'
 
   #resources :services
   resources :users

@@ -359,212 +359,34 @@
         </div>
         <div class="category-description"></div>
         <div class="row articles-wrapper" data-page="1" data-total="661">
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/smart-inventory-system" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'smart-inventory-system.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">Smart Inventory System for Efficient Inventory Management</h4>
-                <div class="article-description">Smart inventory management system: benefits, key techs, real-life use cases from global market giants. By ScienceSoft, 10 years in supply chain software dev.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Sergey Legchekov
+             <div class="flex-container">
+        <div class="category-description"></div>
+        <div class="row articles-wrapper" data-page="1" data-total="661">
+            <% @blogs.each do |blog| %>
+              <div class="article-block col-lg-4 col-md-6 col-sm-12">
+                <a href="#" class="article-wrapper">
+                  <div class="article-image-wrapper">
+                    <% if blog.image.present? %>
+                      <%= image_tag(blog.image, style: "width: 50")%>
+                      <% end %>
                   </div>
-                  <div class="article-date">
-                    <time>Oct 2, 2022</time>
+                  <div class="article-content-wrapper">
+                    <div class="article-categories">
+                      Internet of Things
+                    </div>
+                    <h4 class="article-title"><%= blog.title %></h4>
+                    <div class="article-description"><%= truncate(blog.content.html_safe, :length => 200) unless blog.image.blank? %></div>
+                    <div class="article-footer">
+                      <div class="article-date">
+                        <time>
+                          <% blog.created_at %>
+                        </time>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
+                </a>
               </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/inventory-counting-best-practices" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'inventory-counting-best-practices.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">Best Practices for Inventory Counting: Automating Manual Tasks</h4>
-                <div class="article-description">ScienceSoft reviews the key challenges of inventory counting, describes best practices, and explains the role of technology in ensuring maximum accuracy.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Sergey Legchekov
-                  </div>
-                  <div class="article-date">
-                    <time>Sep 13, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/iot-in-banking-and-financial-services" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'iot-in-banking-and-financial-services.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">IoT for Smart Banking and Finance</h4>
-                <div class="article-description">ScienceSoft describes the role of IoT in banking and finance, reviews its benefits, and gives examples of how leading BFSI orgs take advantage of the tech</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Boris Shiklo
-                  </div>
-                  <div class="article-date">
-                    <time>Sep 5, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/iot-in-oil-and-gas" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'iot-for-oil-and-gas.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">IoT: a Technological Advancement for Oil &amp; Gas</h4>
-                <div class="article-description">ScienceSoft defines the role of IoT in Oil &amp; Gas, describes its advantages, and provides examples of how real businesses in the industry leverage the tech.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Boris Shiklo
-                  </div>
-                  <div class="article-date">
-                    <time>Aug 10, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/iot-in-automotive-industry" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'automotive-iot.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">Automotive IoT: Smarter Vehicles, Optimized Car Manufacturing</h4>
-                <div class="article-description">ScienceSoft describes the role of IoT in the automotive industry, discusses its benefits, and explores how IoT is being used in various industry segments.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Boris Shiklo
-                  </div>
-                  <div class="article-date">
-                    <time>Aug 9, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/iot-scm-and-logistics" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'iot-supply-chain-management-and-logistics.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Internet of Things
-                </div>
-                <h4 class="article-title">IoT for Smarter Supply Chain Management and Logistics</h4>
-                <div class="article-description">ScienceSoft outlines the use of IoT in managing supply chains and logistics, reviews its benefits, and describes how global brands leverage the tech in 2022.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Sergey Legchekov
-                  </div>
-                  <div class="article-date">
-                    <time>Aug 1, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/asset-management-software" class="article-wrapper">
-              <div class="article-image-wrapper">
-               <%= image_tag 'staffing-software.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Software Development
-                </div>
-                <h4 class="article-title">Asset Management Software: Types of Assets Covered, Advantages, and Popular Products</h4>
-                <div class="article-description">ScienceSoft defines and categorizes asset management, discusses useful features of asset management software, and describes popular asset management products.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Boris Shiklo
-                  </div>
-                  <div class="article-date">
-                    <time>Apr 13, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/gray-box-penetration-testing" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'gray-box-pen-testing-1.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Information Security
-                </div>
-                <h4 class="article-title">Gray Box Penetration Testing: Essence, Value, Execution</h4>
-                <div class="article-description">Learn what you need to know about gray box penetration testing, including its benefits and how to conduct it in your organization.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Uladzislau Murashka
-                  </div>
-                  <div class="article-date">
-                    <time>Apr 13, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
-          </div>
-          <div class="article-block col-lg-4 col-md-6 col-sm-12">
-            <a href="https://www.scnsoft.com/blog/staffing-software" class="article-wrapper">
-              <div class="article-image-wrapper">
-                <%= image_tag 'asset-management-software.png' %>
-              </div>
-              <div class="article-content-wrapper">
-                <div class="article-categories">
-                  Software Development
-                </div>
-                <h4 class="article-title">Staffing Software: Key Capabilities and Top Products</h4>
-                <div class="article-description">Explore key capabilities of software for temporary or long-term staffing including applicant tracking, CRM, and accounting and top products.</div>
-                <div class="article-footer">
-                  <div class="article-author">
-                    By Vladimir Stepuro
-                  </div>
-                  <div class="article-date">
-                    <time>Mar 17, 2022</time>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-link-arrow btn-link-arrow--right read-article-btn">&nbsp;</button>
-              </div>
-            </a>
+            <% end %>
           </div>
         </div>
         <div class="more-btn-wrapper">

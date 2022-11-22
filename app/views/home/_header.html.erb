@@ -45,11 +45,11 @@
   <body>
     <!-- Creating a navigation bar using the
       .navbar class of bootstrap -->
-    <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1300px; top: 0;">
+    <nav class="navbar navbar-expand-sm bg-light" style="height: 103px; position: fixed;z-index: 1;width: 1300px; top: 0;width: 2000px;">
       <div class="img">
         <%= image_tag "jmw_1.png",style: "width: 213px"%>
       </div>
-      <ul class="navbar-nav ml-auto nav_bar" style="font-size: 16px; font-weight: bold;">
+      <ul class="navbar-nav ml-auto nav_bar" style="font-size: 16px; font-weight: bold; position: relative; left: -1000px;">
         <li class="dropdown nav-item home_link">
           <a href="#"
             data-toggle="dropdown"
@@ -78,16 +78,16 @@
             <ul class="dropdown-menu">
             <div class="arrow-up"></div>
               <li>
-                <%= link_to 'Mobile App Development', services_mobile_app_development_path, style: "color: #f47900;" %>
+                <%= link_to 'Mobile App Development', mobile_app_development_path, style: "color: #f47900;" %>
               </li>
               <li>
-                <%= link_to 'Web Development', services_web_development_path, style: "color: #f47900;" %>
+                <%= link_to 'Web Development', web_development_path, style: "color: #f47900;" %>
               </li>
               <li>
-                <%= link_to 'Devpos', services_devops_path, style: "color: #f47900;" %>
+                <%= link_to 'Devpos', devops_path, style: "color: #f47900;" %>
               </li>
               <li>
-                <%= link_to 'QA', services_quality_assurance_consultancy_path, style: "color: #f47900;" %>
+                <%= link_to 'QA', quality_assurance_consultancy_path, style: "color: #f47900;" %>
               </li>
             </ul>
           </li>
@@ -97,7 +97,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <%= link_to 'Contact us',new_user_path, :class =>  'contact_us', :style => "color: #f47900;" %>
+          <%= link_to 'Contact us',contact_path, :class =>  'contact_us', :style => "color: #f47900;" %>
           </a>
         </li>
         <li class="nav-item1">
