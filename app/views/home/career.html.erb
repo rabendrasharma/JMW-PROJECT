@@ -1,15 +1,17 @@
 <%= render partial: "home/header" %>
 <div class="show-link">
-<section class="banner aos-init aos-animate" data-aos="fade-up" data-aos-delay="80">
-  <div class="container big-container ">
+<section class="banner aos-init aos-animate" data-aos="fade-up" data-aos-delay="80" style="margin-top: 101px;margin-top: 101px;
+    padding: 0;">
+  <div class="container big-container " style="margin-top: 101px;margin-top: 101px;
+    padding: 0;">
     <div class="row">
       <div class="col-md-6 text-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="80">
         <div class="banner-img-thumb">
-          <%= image_tag "Banner-image.png" ,class: "img-fluid" %>
+          <%= image_tag "career_img.jpg" ,class: "img-fluid img-rounded",style: "max-width: 100%;height: 263px;border-radius: 50%;  " %>
         </div>
       </div>
-      <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="80">
-        <h1 class="mb-4">We’re Superheroes/ Honest Devils/ Foodies/ Perfectionists<span class="dot"></span></h1>
+      <div class="col-md-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="80" >
+        <h1 class="mb-4"> <strong>We’re Superheroes/ Honest Devils/ Foodies/ Perfectionists</strong></h1>
         <p class="mb-4">“Jmw is an open working environment with a lot of transparency and employee freedom. JMW is a team not a bunch of individuals.”</p>
       </div>
     </div>
@@ -71,11 +73,6 @@
 <div class="container-fluid color-bgWhite banner-col">
   <div class="container big-container">
     <div class="career-carousel owl-carousel owl-theme owl-loaded owl-drag">
-      <!-- ITEM -->
-      <!-- ITEM -->
-      <!-- ITEM -->
-      <!-- ITEM -->
-      <!-- ITEM -->
       <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -143,7 +140,7 @@
       </div>
     </div>
     <section class="looking-perks aos-init aos-animate section-d reveal" data-aos="fade-up" data-aos-delay="100">
-      <div class="inner-wrap">
+      <div class="inner-wrap" style="background-color: #fd7e14;">
         <div class="container-fluid">
           <div class="container big-container">
             <div class="row">
@@ -155,12 +152,12 @@
                 <div class="content-wrap reveal">
                   <h2>Looking For Perks?</h2>
                   <p><strong>We have got you covered</strong></p>
-                  <ul class="all-perks">
+                  <ul class="all-perks" style="color: white !important;">
                     <li>Challenging projects with the opportunity to learn latest technologies like <br> ReactNative, amber.js, react.js.</li>
                     <li>Closely knit team of engineers who are passionate about what they do.</li>
                     <li>Continuous professional development and meaningful career growth.</li>
                     <li>A chance to work with global brands including Grindr, Deloitte, Porsche.</li>
-                    <li>Work at a office facility based out of the prestigious Crystal IT Park.</li>
+                    <li>Work at a office facility based out of the prestigious Satguru Parinay Opposite C21 mall.</li>
                     <li>Flexible working hours offering a great work life balance.</li>
                   </ul>
                 </div>
@@ -174,30 +171,6 @@
       </div>
   </div>
   </section>
-  <section class="apd-app-leading-company aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-    <div class="apd-company-wrap text-center reveal">
-      <div class="lead-container container">
-        <h3 class="text-center">Recognised By World's Best For Building A Better Workplace.</h3>
-        <div class="img-section">
-          <ul class="recognize_logo">
-            <li>
-              <%= image_tag 'gptw-logo.png' %>
-            </li>
-            <li>
-              <%= image_tag 'aon-hewitt-logo.png' %>
-            </li>
-            <li>
-              <%= image_tag 'ceo-orientation.png' %>
-            </li>
-            <li>
-              <%= image_tag 'gptw-logo.png' %>
-            </li>
-          </ul>
-        </div>
-        <!--  -->
-      </div>
-    </div>
-  </section>
   <section class="work-with-us aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
     <div class="inner-wrap reveal">
       <div class="container-fluid color-bgWhite">
@@ -206,9 +179,8 @@
             <h2 class="text-center">Excited To Work With Us...</h2>
             <p class="subhead text-center">Let’s write some beautiful codes and make intuitive designs. This is what we’re crazy <br> about, and we are for the ones who feel the same.</p>
             <ul class="vacancy_lists">
-              <li>
-
-                <div class="vacancy-box vacancy-box1" onclick="div_clickable()">
+              <li onclick="location.href='/contact?select_language=ROR';">
+                <div class="vacancy-box vacancy-box1">
                   <h4><%= link_to 'ROR Developer', contact_path(select_language: "ROR") %></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
@@ -218,8 +190,8 @@
                   <img class="forward-arrow" src="./carries_files/circle-arw.png" alt="" data-backdrop="false">
                 </div>
               </li>
-              <li >
-                <div class="vacancy-box vacancy-box2"  onclick="div_clickable()">
+              <li onclick="location.href='/contact?select_language=Node_js';">
+                <div class="vacancy-box vacancy-box2">
                   <h4><%= link_to 'Node JS Developer', contact_path(select_language: "Node_JS")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
@@ -228,8 +200,8 @@
                   <img class="forward-arrow" src="./carries_files/circle-arw.png" alt="" data-backdrop="false">
                 </div>
               </li>
-              <li >
-                <div class="vacancy-box vacancy-box3"  onclick="div_clickable()">
+              <li onclick="location.href='/contact?select_language=React_js';">
+                <div class="vacancy-box vacancy-box3">
                   <h4> <%= link_to 'React JS Developer', contact_path(select_language: "React_JS")%></h4>
                   <p>Experience : 3+ Years</p>
                   <p class="location">
@@ -238,8 +210,8 @@
                   <img class="forward-arrow" src="./carries_files/circle-arw.png" alt="" data-backdrop="false">
                 </div>
               </li>
-              <li>
-                <div class="vacancy-box vacancy-box4"  onclick="div_clickable()">
+              <li onclick="location.href='/contact?select_language=Pyhton';">
+                <div class="vacancy-box vacancy-box4">
                   <h4>
                     <%= link_to 'Python Developer', contact_path(select_language: "Python")%>
                   </h4>
@@ -250,8 +222,8 @@
                   <img class="forward-arrow" src="./carries_files/circle-arw.png" alt="" data-backdrop="false">
                 </div>
               </li>
-              <li>
-                <div class="vacancy-box vacancy-box5"  onclick="div_clickable()">
+              <li onclick="location.href='/contact?select_language=Architect';">
+                <div class="vacancy-box vacancy-box5">
                   <h4><%= link_to 'Technical Architect', contact_path(select_language: "Architect")%></h4>
                   <p>Experience : 7+ Years</p>
                   <p class="location">
@@ -273,7 +245,7 @@
   background-color: "Proxima Nova",Arial,SourceSansPro,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
 }
   .banner{
-  background-color: #ff6a006b !important;
+  background-color: #f0822c45 !important;
   }
   .reveal{
   position: relative;
@@ -286,7 +258,7 @@
   opacity: 1;
   }
   .banner{
-  background-color: #ff6a006b !important;
+  background-color: #f0822c45 !important;
   padding: 146px;
   }
   .banner h1, .banner h2.heading-copy {
@@ -314,28 +286,36 @@
     padding: 0 !important;
   }
   .carousel-control-prev, .carousel-control-next{
-    background-color: orange !important;
-    color: orange;
+    background-color: #fd7e14 !important;
+    color: #fd7e14;
   }
     .carousel-control-prev:hover, .carousel-control-next:hover{
-    background-color: orange !important;
-    color: orange;
+    background-color: #fd7e14 !important;
+    color: #fd7e14;
   }
   .carousel-item{
-    background-color: orange !important;
+    background-color: #fd7e14 !important;
   }
   .cara-items{
     padding-left: 30px;
     width: 90%;
     margin: 0 auto;
-    background-color: orange !important;
+    background-color: #fd7e14 !important;
   }
   #carouselExampleIndicators{
     margin-bottom: 30px !important;
   }
-  .show-link{
-    background-color: orange;
-  }
+  .looking-perks .inner-wrap .content-wrap ul li {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 16px;
+    font-family: Muli,sans-serif!important;
+    background: url(../img/reward.svg);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0 5px;
+    color: white !important;
+  
 </style>
 <script>
   // function div_clickable(e){
