@@ -6,10 +6,6 @@
     <link rel="stylesheet" href=
       "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src=
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src=
-      "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src=
       "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet"
       href=
@@ -45,72 +41,249 @@
   <body>
     <header class="header">
       <div class="header__left">
-        <a href="https://justmindwork.com/" class="header__logo" aria-label="Logo">
-          <%= image_tag "jmw_1.png",style: "width: 50%"%>
-        </a>
-        <div class="header__menuWrap">
-          <ul id="menu-header-menu" class="header__menu">
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10535" class="full-width about-us menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10535 nav-item">
-              <div class="dropdown">
-              <a title="About Us" href="https://justmindwork.com/" class="nav-link dropbtn">Company</a>
-                 <div class="dropdown-content">
-                  <a href="https://justmindwork.com/about_us" style="border-bottom: 1px solid grey;">About Us </a>
-                  <a href="https://justmindwork.com/partnership" >Partnership</a>
-                </div>
+      <a href="/" class="header__logo" aria-label="Logo">
+      <%= image_tag "jmw_1.png",style: "width: 300px"%>
+      </a>
+    <div class="right_header_wrapper">
+      <div class="header__menuWrap">
+        <ul id="menu-header-menu" class="header__menu">
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10535" class="full-width about-us menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10535 nav-item">
+       
+            <div class="dropdown">
+              <a title="About Us" href="/" class="nav-link dropbtn">Company</a>
+              <div class="dropdown-content">
+                <a href="/about_us" style="border-bottom: 1px solid grey;">About Us </a>
+                <a href="/partnership" >Partnership</a>
               </div>
-              <div class="dropdown-menu__wrapper" style="display: none;">
-                <ul class="dropdown-menu">
-              </li>
-                </ul>
+            </div>
+            <div class="dropdown-menu__wrapper" style="display: none;">
+              <ul class="dropdown-menu">
+                </li>
+              </ul>
+            </div>
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10555" class="full-width services menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10555 nav-item">
+            <div class="dropdown">
+              <a title="Services" href="/what_we_do" class="nav-link dropbtn">What We Do</a>
+              <div class="dropdown-content">
+                <a href="/mobile_app_development" style="border-bottom: 1px solid grey;">Mobile App Development</a>
+                <a href="/web_development" style="border-bottom: 1px solid grey;">Web Development </a>
               </div>
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10555" class="full-width services menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10555 nav-item">
-              <div class="dropdown">
-              <a title="Services" href="https://justmindwork.com/what_we_do" class="nav-link dropbtn">What We Do</a>
-                <div class="dropdown-content">
-                  <a href="https://justmindwork.com/mobile_app_development" style="border-bottom: 1px solid grey;">Mobile App Development</a>
-                  <a href="https://justmindwork.com/web_development" style="border-bottom: 1px solid grey;">Web Development </a>
-                </div>
+          </li>
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10580" class="full-width industries-expertise menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10580 nav-item">
+          <a title="Our Services" href="our_services" class="nav-link">Our Services</a>
+          </li>
+          
+          <!-- <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10604" class="blog-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10604 nav-item">
+          <a title="Blog" href="/blogs" class="nav-link">Blog</a>
+          </li> -->
+          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24921" class="global-link menu-item menu-item-type-custom menu-item-object-custom menu-item-24921 nav-item"><a title="Careers" target="_blank" href="/career" class="nav-link">Careers</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="header__right">
+            <a class="header__btn btn btn--black btn--small" href="/contact">Contact Us</a> 
+          </div>
+      </div>
+    </div>
+<!-- hamburger -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
+    <div>
+      <%= image_tag "jmw_1.png",style: "width: 247px"%>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <a href="/about_us"><li>About Us </li></a>
+      <a href="/our_services"><li>Our Services</li></a>
+      <a href="/what_we_do"><li>What We Do</li></a>
+      <a href="/contact"><li>Contact Us</li></a>
+      <!-- <a href="/blogs"><li>Blog</li></a> -->
+    </ul>
+  </section>
 
-              
-            </li>
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10580" class="full-width industries-expertise menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10580 nav-item">
-              <a title="Our Services" href="https://justmindwork.com/our_services" class="nav-link">Our Services</a>
-              
-            </li>
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10601" class="clients-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10601 nav-item">
-              <a title="Contact Us " href="https://justmindwork.com/contact" class="nav-link">Contact Us </a>
-              
-            </li>
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10604" class="blog-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-10604 nav-item">
-              <a title="Blog" href="https://justmindwork.com/blogs" class="nav-link">Blog</a>
-              
-            </li>
-            <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24921" class="global-link menu-item menu-item-type-custom menu-item-object-custom menu-item-24921 nav-item"><a title="Careers" target="_blank" href="https://justmindwork.com/career" class="nav-link">Careers</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__right">
-        <a class="header__btn btn btn--black btn--small" href="https://justmindwork.com/contact">Contact Us</a> 
-      </div>
+
+<!-- end hamburger -->
+ 
     </header>
 </html>
 <style>
-.dropbtn {
+/* hamburger css */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);*/
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+.top-nav{
+  display: none;
+}
+.brunch-pro .site-header{
+    background: transparent;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > a {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  background: black;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 950px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+  #menu-toggle ~ .menu a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  
+  }
+  #menu-toggle:checked ~ .menu a {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em 30px;
+    transition: height 400ms cubic-bezier(0.24, 1, 0.32, 1);
+    width: 949px;
+    display: inline-table;
+     }
+  .menu > a {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > a:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .header{
+    display: none !important;
+  }
+  .top-nav{
+    display: block;
+    display: flex;
+  }
+}
+
+
+
+/*end css*/
+
+  .dropbtn {
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
-}
-.nav-link:hover{
+  }
+  .nav-link:hover{
   color: #0045cf !important;
-}
-
-.dropdown {
+  }
+  .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.dropdown-content {
+  }
+  .right_header_wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -120,33 +293,29 @@
   margin-top: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.dropdown-content a {
+  }
+  .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
+  }
+  .dropdown-content a:hover {color: #0045cf;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {color: #0045cf;}
 
-.dropdown-content a:hover {color: #0045cf;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {color: #0045cf;}
 </style>
 <script>
-  
   $(function () {
   $(document).scroll(function () {
     var $nav = $(".header");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
-});
+  });
 </script>
 <style type="text/css">
   .author .header, .home .header, .single-expertise .header, .single-industries .header, .single-news .header, .single-post .header, .single-products .header, .single-services .header, .transparent_header .header {
-    min-width: 960px !important;
+  min-width: 960px !important;
   }
   @media (min-width: 961px)
   .author .header, .home .header, .single-expertise .header, .single-industries .header, .single-news .header, .single-post .header, .single-products .header, .single-services .header, .transparent_header .header {
@@ -158,19 +327,18 @@
   top: 0;
   z-index: 2;
   }
- header {
+  header {
   background-color: transparent; /* For browsers that do not support gradients */
   background-image: linear-gradient(transparent, transparent);
-
-}
-.header.scrolled{
+  }
+  .header.scrolled{
   background-color: white !important;
   transition: background-color 200ms linear;
-}
+  }
   .header {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 100px;
   padding-right: 100px;
   transition: background-color .3s;
@@ -188,7 +356,7 @@
   display: block;
   }
   .header:hover{
-    background-color: white;
+  background-color: white;
   }
   body {
   font-size: 1rem;
@@ -204,15 +372,20 @@
   html{
   font-size: 16px;
   }
-  .header__left, .header__logo{
+  .header__left{
   align-items: center;
   display: flex;
+  justify-content: center;
+  }
+  .header__logo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
   user agent stylesheet
   div {
   display: block;
   }
-  
   html{
   font-size: 16px;
   }
@@ -243,11 +416,9 @@
   .header__menu {
   align-items: center;
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
-  left: -12rem;
+ justify-content: center;
   }
   user agent stylesheet
   ul {
@@ -267,7 +438,7 @@
   display: flex;
   }
   .header__btn:hover{
-    background-color: orange !important;
+  background-color: orange !important;
   }
   @media (min-width: 961px)
   .home .header__btn {
@@ -429,6 +600,17 @@
   white-space: nowrap;
   }
   .header__menu>li{
-    padding: 10px 18px
+  padding: 10px 18px
   }
+@media (max-width: 1399px){
+  .header__menu .nav-link{
+    padding: 0;
+  }
+@media(max-width: 1311px){
+  .header__right{
+   display: none;
+  }
+}
+
+}
 </style>
