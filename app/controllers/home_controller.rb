@@ -2,12 +2,12 @@ class HomeController < ApplicationController
   layout 'application'
 
   def new
+    @select_language = params["select_language"]
     @user = User.new
   end
 
-  def create
+  def create    
    @user = User.new(user_params)
-
    if @user.save
       UserMailer.with(user: @user).new_user_email.deliver_later
 
@@ -18,7 +18,6 @@ class HomeController < ApplicationController
       render :new
    end
   end
-
 
   private
 

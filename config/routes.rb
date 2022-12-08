@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
-  get 'contact', :to => 'home#new'
+  get 'contact', :to => 'users#new'
   get 'about_us', :to => 'home#about_us'
   get 'career', :to => 'home#career'
   get 'our_services', :to => 'home#our_services'

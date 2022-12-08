@@ -64,17 +64,19 @@
                             <%= form.text_field :name, class: "w-210 name_field",id: "txt", placeholder: "Your name", :required => true%>
                          </div>
                          <div class="col-md-10 ">
-                            <%= form.label :Yourmessage,'I would like to talk about',class: "lable_items"%>
-                            <%= form.text_field :message, class:"w-210 message_field",id:"txt", placeholder: "What you need help on", :required => true%>
+                            <%= form.label :Yourmessage,'I would like to apply for',class: "lable_items"%>
+                            <% select_language = @select_language.present? ? @select_language : "" %>
+                            <%is_readonly = select_language.present? ? true : false %>
+                            <%= form.text_field :message, class:"w-210 message_field",id:"txt", placeholder: "Apply For", value: select_language, :required => true, readonly: is_readonly%>
                          </div>
                          <div class="col-md-10 ">
                             <%= form.label :YourEmail, 'You can reach me at ',class: "lable_items"%>
-                            <%= form.text_field :email,class:"w-210 email_field mail_field",id:"txt", placeholder: "Your email", :required => true %>
+                            <%= form.text_field :email,class:"w-210 email_field mail_field",id:"txt", placeholder: "Your Email", :required => true %>
                             <p class="validate_email" style=" display: none;color: red;"> Please provide valid email</p>
                          </div>
                          <div class="col-md-10 ">
                             <%= form.label :Yournumber,'And my Phone Number is',class: "lable_items"%>
-                            <%= form.text_field :number,class:"w-210 number_field num_field",id:"txt",placeholder: "Phone number", :required => true %>
+                            <%= form.text_field :number,class:"w-210 number_field num_field",id:"txt",placeholder: "Your Contact Number", :required => true %>
                             <p class="validate_number" style=" display: none;color: red;"> Please provide valid number</p>
                          </div>
                          <%= form.hidden_field :select_language, value: params[:select_language] %>
@@ -84,8 +86,13 @@
                          <div class="input-cover mb-4" style="display:inline-block; top:15px;">
                             <div class="fileUpload">
                                <span><span id="upload-text"><img class="attach-img-icon" src="" alt="">
-                               Attach your file here </span> <a id="removeUpload" href="">x</a></span>
-                               <input type="file" class="upload" name="attachment">
+                               Attach your Resume Here </span></span>
+                               <!-- <input type="file" class="upload" name="attachment"> -->
+                               <span>
+
+                               <%= form.file_field :image, style: "color: black !important;"%>
+
+                             </span>
                             </div>
                          </div>
                          <br>
