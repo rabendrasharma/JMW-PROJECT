@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
 
   def new
+    @select_language = params["select_language"]
     @user = User.new
     render 'home/new'
   end
