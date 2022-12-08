@@ -90,7 +90,9 @@
 }
 
 .contact-form-section .contact-wrapper .fileUpload #upload-text {
-	color: #6060EB;
+	color: black;
+    margin-left: -101px;
+    font-size: 17px;
 }
 
 .contact-form-section .contact-wrapper .input-cover {

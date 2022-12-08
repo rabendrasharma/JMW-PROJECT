@@ -89,18 +89,16 @@
                                Attach your Resume Here </span></span>
                                <!-- <input type="file" class="upload" name="attachment"> -->
                                <span>
-
-                               <%= form.file_field :image, style: "color: black !important;"%>
-
+                               <%= form.file_field :image, style: "color: black !important;margin-top: 12px;position: relative;left: 12px;margin-bottom: 40px"%>
                              </span>
                             </div>
                          </div>
                          <br>
                       </div>
-                      <div class="btn_sub">
-               <%= form.submit class:"submit_btn"%>
-              </div>
-              <% end %>
+                     <div class="btn_sub">
+                       <%= form.submit class:"submit_btn"%>
+                      </div>
+                      <% end %>
                       </form>
                    </div>
                 </div>
@@ -132,6 +130,7 @@
           font-size: 16px;
           line-height: 20px;
           }
+
           .contact-form-container p {
           margin-bottom: 10px;
           line-height: 33px;
